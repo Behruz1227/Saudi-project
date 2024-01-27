@@ -256,49 +256,28 @@ function Home() {
 
       <div>
         <div className='text-center px-10'>
-          <h1>More from Riyadh Bus</h1>
-          <h2>#Riyadh #RoyalCommissionForRiyadhCity #Riyadh_bus</h2>
+          <h1 className="text-2xl font-bold my-4">More from Riyadh Bus</h1>
+          <h2 className="text-lg">#Riyadh #RoyalCommissionForRiyadhCity #Riyadh_bus</h2>
         </div>
-        <div className="bg-gray-100 p-5">
-          <div className="grid gap-4">
-            {/* Tasvirlarning katta rasm */}
-            <div className='col-end-4'>
-              <div className="row">
-                <img src={first} alt="Main Image" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
-
-              <div className='row'>
-                <img src={second} alt="Image 1" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
+        <div className="flex justify-around">
+          {/* Birinchi qator - uchta tasvir */}
+          <div className="w-[32%] h-[500px]">
+            <div className='w-full h-[300px] flex justify-end items-end'>
+              <img src={first} alt="Image 1" className="w-[200px] object-cover rounded-lg shadow" />
             </div>
-
-            <div className='columns-2'>
-              <div>
-                <img src={third} alt="Image 2" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
-              <div className="col-span-2">
-                <img src={fourth} alt="Image 3" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
-              <div>
-                <img src={fiveth} alt="Image 4" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
-              <div>
-                <img src={sixth} alt="Image 5" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
-            </div>
-
-            <div className='columns-2'>
-              <div>
-                <img src={seventh} alt="Image 5" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
-              <div>
-                <img src={eight} alt="Image 5" className="w-full h-full object-cover rounded-lg shadow" />
-              </div>
+            <div className='pt-5'>
+              <img src={first} alt="Image 1" className="w-full object-cover rounded-lg shadow" />
             </div>
           </div>
+          <div className='w-[32%] h-[500px]'>
+            <div>
+              
+            </div>
+          </div>
+          
         </div>
-
       </div>
+
     </>
 
   )

@@ -8,6 +8,10 @@
     background-color: #F0F0F0;
 }
 
+.about-one-page:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* heading tags colors */
 .heading-tags-color {
     color: #113108;
@@ -16,6 +20,11 @@
 /* cards styles */
 .aboutCard1 {
     background-color: #1E1E1E;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
 .aboutCard1 p {
@@ -24,6 +33,11 @@
 
 .aboutCard2 {
     background-color: #6FD44F;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
 .aboutCard2 p {
@@ -32,6 +46,11 @@
 
 .aboutCard3 {
     background-color: #113108;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
 .aboutCard3 p {

@@ -7,3 +7,30 @@
     font-family: 'Encode Sans', sans-serif;
     background-color: #F0F0F0;
 }
+
+/* cards styles */
+.aboutCard1 {
+    background-color: #1E1E1E;
+}
+
+.aboutCard1 p {
+    color: #7DFB50;
+}
+
+.aboutCard2 {
+    background-color: #6FD44F;
+}
+
+.aboutCard2 p {
+    color: #1E1E1E;
+}
+
+.aboutCard3 {
+    background-color: #113108;
+}
+
+.aboutCard3 p {
+    color: #7DFB50;
+}
+
+/* cards styles */

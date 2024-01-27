@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className="about-main">
             {/*one page*/}
-            <div className="mt-5">
+            <div className="pt-10">
                 <AboutOnePage />
             </div>
             <div className="mt-20">

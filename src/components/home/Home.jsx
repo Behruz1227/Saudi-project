@@ -3,6 +3,7 @@ import React from 'react'
 function Home() {
   return (
     <div className='main'>
+        {/* page 1 */}
         <div className="page1">
             <div className="page-1Card">
                 <h1>Your next ride is just a finger tip away</h1>

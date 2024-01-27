@@ -9,7 +9,7 @@ const Information = () => {
         </div>
         <div className='w-full pl-5'>
           <p className='text-[1.2rem] tracking-wide font-medium' style={{ color: "#00CF00" }}>OVERVIEW</p>
-          <h1 className='mt-10 text-[2rem] font-bold tracking-wide' style={{ color: "#113108" }}>
+          <h1 className='mt-10 text-[2rem] font-bold tracking-wide heading-tags-color'>
             Planning for <br />
             Riyadh’s <br />
             future mobility <br />

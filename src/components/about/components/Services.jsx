@@ -12,7 +12,7 @@ const Services = () => {
         services, we are dedicated to making every journey seamless, efficient, <br />
         and tailored to the needs of our valued commuters.
       </p>
-      <div className="mt-20 relative shadow-lg rounded-3xl overflow-hidden">
+      <div className="mt-20 relative shadow-lg hover:shadow-2xl duration-200 rounded-3xl overflow-hidden">
         <img src={images} alt="images" className="w-full" />
         <p className="absolute text-white top-[48%] left-[7%] text-[1.2rem] tracking-wider leading-6">Our journey to <br />enhance mobility</p>
         <div className="absolute right-[7%] top-[46.7%] flex">

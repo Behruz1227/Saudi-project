@@ -7,11 +7,9 @@ import icon3 from './icon3.png'; //ishlatildi
 import images from './images.png'; //ishlatildi
 import appleIcon from './appleIcon.png'; //ishlatildi
 import googleIcon from './googleIcon.png'; //ishlatildi
-import mobileImg from './mobile.png';
-import bussIcon from './bussIcon.png';
-import line from './line.png';
-import lines from './lines.png';
-import odam from './odam.png';
+import next from './next.png'; //ishlatildi
+import p from './p.png'; //ishlatildi
+import fBuss from './fBuss.png'; //ishlatildi
 
 export {
     // one page bg
@@ -29,5 +27,10 @@ export {
     // servises
     images,
     appleIcon,
-    googleIcon
+    googleIcon,
+
+    // oxirgi pages
+    next,
+    p,
+    fBuss,
 }

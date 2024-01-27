@@ -7,12 +7,14 @@ import Tickets from './components/ticekts/Tickets';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/Navbar' element={<Navbar />} />
-      <Route path='/tickets' element={<Tickets />} />
-    </Routes>
+    <div className="container">
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/Navbar' element={<Navbar/>}/>
+        <Route path='/tickets' element={<Tickets/>}/>
+      </Routes>
+      </div>
   );
 }
 

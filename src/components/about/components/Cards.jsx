@@ -9,20 +9,20 @@ const Cards = () => {
         the transport landscape
       </h1>
       <div className="flex justify-between items-start mt-10">
-        <div className="aboutCard1 rounded-2xl px-6 py-7 w-1/3 h-96 mx-4 relative ml-0">
-          <img src={icon1} alt="icon1" className="w-10" />
+        <div className="aboutCard1 rounded-2xl px-6 py-7 w-1/3 h-96 mx-4 shadow-lg hover:-mt-2 relative ml-0">
+          <img src={icon1} alt="icon1" className="w-10 hover:scale-110 duration-200 hover:cursor-pointer" />
           <p className="absolute bottom-10 font-bold text-[1.5rem] leading-7 tracking-wide">
             Environment <br /> friendly <br /> sustainable <br /> buses
           </p>
         </div>
-        <div className="aboutCard2 rounded-2xl px-6 py-7 w-1/3 h-96 mx-2 relative">
-          <img src={icon2} alt="icon2" className="w-10" />
+        <div className="aboutCard2 rounded-2xl px-6 py-7 w-1/3 h-96 mx-2 shadow-lg hover:-mt-2 relative">
+          <img src={icon2} alt="icon2" className="w-10 hover:scale-110 duration-200 hover:cursor-pointer" />
           <p className="absolute bottom-10 font-bold text-[1.5rem] leading-7 tracking-wide">
             Multiple <br /> payment <br /> options for daily <br /> commuters
           </p>
         </div>
-        <div className="aboutCard3 rounded-2xl px-6 py-7 w-1/3 h-96 mx-4 relative mr-0">
-          <img src={icon3} alt="icon3" className="w-10" />
+        <div className="aboutCard3 rounded-2xl px-6 py-7 w-1/3 h-96 mx-4 shadow-lg hover:-mt-2 relative mr-0">
+          <img src={icon3} alt="icon3" className="w-10 hover:scale-110 duration-200 hover:cursor-pointer" />
           <p className="absolute bottom-10 font-bold text-[1.5rem] leading-7 tracking-wide">
             Integrated bus <br /> network across <br /> Riyadh
           </p>

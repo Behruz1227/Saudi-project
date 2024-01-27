@@ -3,7 +3,7 @@ import { p, fBuss, next } from "./imgs/index";
 const LastInfoPage = () => {
     return (
         <div className="w-[1100px] flex justify-between items-start">
-            <div className="w-1/3 h-[290px] p-5 hover:shadow-lg duration-200 mr-4">
+            <div className="w-1/3 h-[290px] p-5 hover:shadow-lg hover:-mt-3 rounded-xl duration-200 mr-4">
                 <img className="w-12 hover:scale-110 duration-200 hover:cursor-pointer" src={fBuss} alt="fbuss" />
                 <h3 className="mt-7 font-bold text-[1.2rem] tracking-wide leading-5">
                     State of the art <br /> buses
@@ -13,7 +13,7 @@ const LastInfoPage = () => {
                     technology meets comfort.
                 </p>
             </div>
-            <div className="w-1/3 h-[290px] p-5 hover:shadow-lg duration-200 mx-2">
+            <div className="w-1/3 h-[290px] p-5 hover:shadow-lg hover:-mt-3 rounded-xl duration-200 mx-2">
                 <img className="w-12 hover:scale-110 duration-200 hover:cursor-pointer" src={p} alt="p" />
                 <h3 className="mt-7 font-bold text-[1.2rem] tracking-wide leading-5">
                     World class safety <br /> standards
@@ -22,7 +22,7 @@ const LastInfoPage = () => {
                     At the heart of our service is a commitment to world-class safety standards.
                 </p>
             </div>
-            <div className="w-1/3 h-[290px] p-5 hover:shadow-lg duration-200 ml-4">
+            <div className="w-1/3 h-[290px] p-5 hover:shadow-lg hover:-mt-3 rounded-xl duration-200 ml-4">
                 <img className="w-12 hover:scale-110 duration-200 hover:cursor-pointer" src={next} alt="next" />
                 <h3 className="mt-7 font-bold text-[1.2rem] tracking-wide leading-5">
                     Reducing traffic <br /> congestion

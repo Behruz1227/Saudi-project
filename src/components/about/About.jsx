@@ -1,6 +1,7 @@
 import AboutOnePage from "./components/AboutOnePage";
 import "./about.css";
 import Information from "./components/Information";
+import Statistics from "./components/Statistics";
 
 const About = () => {
     return (
@@ -11,6 +12,9 @@ const About = () => {
             </div>
             <div className="mt-20">
                 <Information />
+            </div>
+            <div className="mt-24">
+                <Statistics />
             </div>
         </div>
     )

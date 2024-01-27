@@ -131,19 +131,29 @@ function Home() {
               <div><img src={phone} alt="" className='absolute bottom-0 w-80 ' /></div>
             </div>
             <div className='w-5/12 h-full flex items-center bg-gray-200'>
-              <div class="bg-black text-white p-6 rounded-lg flex flex-col items-center justify-center">
+              <div class="w-full h-full bg-white text-black px-6 rounded-bl-3xl flex flex-col">
                 <div class="flex items-center mb-4">
                   {/* <!-- Bu yerga sizning logotipingizning tasvirini qo'ying --> */}
-                  <img src="/path-to-your-logo.png" alt="Riyadh Bus Logo" class="w-12 h-12 mr-3" />
+                  <img src={logosecond} alt="Riyadh Bus Logo" class="w-12 h-12 mr-3" />
                 </div>
-                <p class="text-lg mb-4">Download the Riyadh Bus app today.</p>
-                <div class="flex">
-                  <a href="#appstore-link" class="mr-4">
-                    <img src="/path-to-appstore-logo.png" alt="Download on the App Store" />
-                  </a>
-                  <a href="#googleplay-link">
-                    <img src="/path-to-googleplay-logo.png" alt="Get it on Google Play" />
-                  </a>
+                <p class="text-lg mb-4 w-32">Download the Riyadh Bus app today.</p>
+                <div class="flex mt-2">
+                  <button className='flex justify-center items-center border px-3 py-2 rounded-2xl mr-2 bg-black text-white'>
+                    <i class="fa-brands fa-apple text-3xl mr-2 "></i>
+                    <div className='text-start'>
+                      <p>download on the </p>
+                      <p className='text-lg mt-0'>App story </p>
+                    </div>
+                  </button>
+                  <button className='flex justify-center items-center border px-3 py-2 rounded-2xl bg-black text-white'>
+                  <i class="fa-brands fa-google-play mr-2 text-2xl"></i>
+                    <div className='text-start'>
+                      <p>get on the </p>
+                      <p className='text-lg mt-0'>Google play</p>
+                    </div>
+                  </button>
+
+
                 </div>
               </div>
 

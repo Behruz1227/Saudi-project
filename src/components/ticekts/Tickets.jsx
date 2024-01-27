@@ -4,6 +4,10 @@ import React from "react";
 import Card from "./components/Card";
 import AboutFirst from "./components/AboutFirst";
 import Information from "./components/Information";
+import Pur from "./components/Pur";
+import MobileCard from "./components/MobileCard";
+import Text from "./components/Text";
+import Bus from "./components/Bus";
 
 function Tickets() {
   return (
@@ -15,9 +19,21 @@ function Tickets() {
         <div className="mt-20">
             <Information/>
         </div>
-       <div className="mt-20 w-full">
-        <Card/>
+       <div className="mt-20 ">
+          <Card/>
        </div>
+       <div className="mt-20">
+         <Pur/>
+       </div>
+       <div className="mt-12">
+        <MobileCard/>
+       </div>
+       <div className="mt-12">
+        <Text/>
+      </div>
+      <div className="mt-20">
+        <Bus/>
+      </div>
 
     </div>
 

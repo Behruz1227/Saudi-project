@@ -10,6 +10,14 @@ import line from "../../assets/home-page/Line.png"
 import buss from "../../assets/home-page/buss.png"
 import layerfamely from "../../assets/home-page/Layerfamely.png"
 import layer from "../../assets/home-page/Layer-first.png"
+import first from "../../assets/home-page/gallery/first.png"
+import second from "../../assets/home-page/gallery/second.png"
+import third from "../../assets/home-page/gallery/third.png"
+import fourth from "../../assets/home-page/gallery/fourth.png"
+import fiveth from "../../assets/home-page/gallery/fiveth.png"
+import sixth from "../../assets/home-page/gallery/sixth.png"
+import seventh from "../../assets/home-page/gallery/seventh.png"
+import eight from "../../assets/home-page/gallery/eightth.png"
 import "./style.css"
 
 function Home() {
@@ -215,7 +223,7 @@ function Home() {
       </div>
 
       <div>
-        <div className="bg-gray-100 py-20 h-max px-20">
+        <div className=" py-20 h-max px-20">
           <h2 className="text-4xl text-lime-900 font-bold text-center mb-6 pb-20">Your safety matters</h2>
           <div className="flex justify-around items-start">
 
@@ -244,6 +252,52 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div>
+        <div className='text-center px-10'>
+          <h1>More from Riyadh Bus</h1>
+          <h2>#Riyadh #RoyalCommissionForRiyadhCity #Riyadh_bus</h2>
+        </div>
+        <div className="bg-gray-100 p-5">
+          <div className="grid gap-4">
+            {/* Tasvirlarning katta rasm */}
+            <div className='col-end-4'>
+              <div className="row">
+                <img src={first} alt="Main Image" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+
+              <div className='row'>
+                <img src={second} alt="Image 1" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+            </div>
+
+            <div className='columns-2'>
+              <div>
+                <img src={third} alt="Image 2" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+              <div className="col-span-2">
+                <img src={fourth} alt="Image 3" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+              <div>
+                <img src={fiveth} alt="Image 4" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+              <div>
+                <img src={sixth} alt="Image 5" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+            </div>
+
+            <div className='columns-2'>
+              <div>
+                <img src={seventh} alt="Image 5" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+              <div>
+                <img src={eight} alt="Image 5" className="w-full h-full object-cover rounded-lg shadow" />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </>
 

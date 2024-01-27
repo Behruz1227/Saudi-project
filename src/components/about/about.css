@@ -4,8 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Encode Sans', serif;
     background-color: #F0F0F0;
+}
+
+/* heading tags colors */
+.heading-tags-color {
+    color: #113108;
 }
 
 /* cards styles */

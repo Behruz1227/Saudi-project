@@ -73,8 +73,6 @@ function Home() {
       </div>
 
 
-
-
       {/* second part */}
       <div className='w-full py-20  h-max'>
 
@@ -119,21 +117,21 @@ function Home() {
           </div>
         </div>
 
-        <div className='w-full h-max py-32 flex'>
+        <div className='w-full h-max py-44 flex'>
           <div className='w-5/12 h-[600] flex flex-col items-center relative'>
             <div className='w-full h-[300px] flex items-center bg-gray-200'>
               <div><img src={vektor} alt="" className='h-[300px]' /></div>
               <div><h1 className='px-10'>New look, more routes, more stations.</h1></div>
             </div>
-            <div className='w-full h-[200px] bg-gray-200'>
-              <div className='bg-white'></div>
+            <div className='w-full h-[300px] bg-gray-200'>
+              <div className='bg-white w-full h-[300px] rounded-tr-3xl'></div>
             </div>
           </div>
 
-          <div className='w-7/12 h-[600px] flex flex-col relative'>
+          <div className='w-8/12 h-[600px] flex flex-col'>
             <div className=' h-[300px] flex'>
-              <div className=' bg-gray-200 w-'>
-                <img src={phone} alt="" className='absolute bottom-0 w-80 ' />
+              <div className=' bg-gray-200 w-5/12 relative'>
+                <img src={phone} alt="" className=' absolute bottom-0 w-full h-[650px]' />
               </div>
               <div className='w-7/12 flex items-center bg-gray-200'>
                 <div class="w-full h-full bg-white text-black px-6 rounded-bl-3xl flex flex-col">
@@ -146,15 +144,13 @@ function Home() {
                     <button className='flex justify-center items-center border px-3 py-2 rounded-2xl mr-2 bg-black text-white'>
                       <i class="fa-brands fa-apple text-3xl mr-2 "></i>
                       <div className='text-start'>
-                        <p>download on the </p>
-                        <p className='text-lg mt-0'>App story </p>
+                        <p>download on the </p><span className='text-lg mt-0'>App story </span><p />
                       </div>
                     </button>
                     <button className='flex justify-center items-center border px-3 py-2 rounded-2xl bg-black text-white'>
                       <i class="fa-brands fa-google-play mr-2 text-2xl"></i>
                       <div className='text-start'>
-                        <p>get on the </p>
-                        <p className='text-lg mt-0'>Google play</p>
+                        <p>get on the <br /> <span className='text-lg'>Google play</span></p>
                       </div>
                     </button>
                   </div>
@@ -163,24 +159,39 @@ function Home() {
             </div>
 
             <div className='w-full flex justify-around  h-[300px]'>
-              <div className='w-full flex justify-around bg-gray-200 h-full items-center rounded-bl-2xl'>
-                <div>
-                  <p>8000</p>
-                  <p>bussines</p>
+              <div className='w-full flex justify-around bg-neutral-200  text-green-700 h-full items-center rounded-bl-2xl'>
+                <div className='flex flex-col items-center '>
+                  <p className='text-6xl'>800+</p>
+                  <p className='text-2xl'>buses</p>
                 </div>
-                <div>
-                  <p>8000</p>
-                  <p>bussines</p>
+                <div className='flex flex-col items-center'>
+                  <p className='text-6xl'>3.0 M</p>
+                  <p className='text-2xl'>passengers</p>
                 </div>
-                <div>
-                  <p>8000</p>
-                  <p>bussines</p>
+                <div className='flex flex-col items-center'>
+                  <p className='text-6xl'>1.6K+</p>
+                  <p className='text-2xl'>stations</p>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <div className='p-20 w-full h-max'>
+        <div className='plan-trip w-full h-full rounded-3xl'>
+          <div className='p-12 w-6/12'>
+            <p className='text-white'>PLAN Your Trip</p>
+            <h2 className='text-lime-500 text-6xl mt-10 '>Find the best route in seconds.</h2>
+            <h2 className='text-white mt-14 text-3xl w-8/12'>Turn on your GPS and find the fastest bus route to reach your destination.</h2>
+            <button className='py-3 px-7 bg-white text-black rounded-3xl mt-5'>Plan your trip </button>
+          </div>
+          <div>
+
+          </div>
+        </div>
       </div>
     </div>
   )

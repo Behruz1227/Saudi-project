@@ -1,0 +1,10 @@
+.home-header {
+    background-image: url('../../assets/home-page/home.png');  
+    overflow: hidden;
+}
+
+@media only screen and(max-width: 1100px){
+    .home-header {
+        background-position: left center;
+    }
+}

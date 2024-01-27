@@ -1,0 +1,22 @@
+export const navigationLink=[
+  {
+    id:'home',
+    title:'Plan'
+  },
+  {
+    id:'routes',
+    title:'Routes'
+  },
+  {
+    id:'tickets',
+    title:'Tickets'
+  },
+  {
+    id:'about',
+    title:'About'
+  },
+  {
+    id:'contact',
+    title:'Contact'
+  }
+]

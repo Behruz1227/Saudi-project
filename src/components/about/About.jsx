@@ -1,7 +1,8 @@
-import AboutOnePage from "./components/AboutOnePage";
 import "./about.css";
+import AboutOnePage from "./components/AboutOnePage";
 import Information from "./components/Information";
 import Statistics from "./components/Statistics";
+import Cards from "./components/Cards";
 
 const About = () => {
     return (
@@ -15,6 +16,9 @@ const About = () => {
             </div>
             <div className="mt-24">
                 <Statistics />
+            </div>
+            <div className="mt-20">
+                <Cards />
             </div>
         </div>
     )

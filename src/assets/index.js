@@ -15,6 +15,8 @@ import carta from './tickets/carta.png'
 import bus from './tickets/bus.png'
 import group3 from './tickets/Group3.png'
 import payment from './tickets/payment.png'
+import logoimage from './tickets/logo (2).png'
+import appleimg from './tickets/appleimg.png'
 
 export {
     home,
@@ -32,6 +34,8 @@ export {
     carta,
     bus,
     group3,
-    payment
+    payment,
+    logoimage,
+    appleimg
 
 }

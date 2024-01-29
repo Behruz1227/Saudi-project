@@ -17,7 +17,7 @@ const About = () => {
             <div className="mt-20">
                 <Information />
             </div>
-            <div className="flex justify-center items-start flex-wrap">
+            <div className="flex flex-col">
                 <div className="mt-24">
                     <Statistics />
                 </div>
@@ -32,7 +32,7 @@ const About = () => {
                 </div>
             </div>
             <div className="mt-40">
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )

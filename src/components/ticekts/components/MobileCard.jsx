@@ -5,7 +5,7 @@ function MobileCard(){
         <div className="justify-center px-28">
              <div className="container w-full px-6 py-6 flex justify-around bg-green-950 rounded-3xl ">
                 <div className="rounded">
-                   <img src={round} alt="" />
+                   <img src={round} alt="" className="" />
                 </div>
                 <div className=" px-10 pt-16 pl-2 py-8 text-4xl text-green-500">
                     <h1>Buy monthly, weekly and <br/> daily passes on Riyadh<br/> Bus app</h1>

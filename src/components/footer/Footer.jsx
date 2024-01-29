@@ -41,15 +41,15 @@ const Footer = () => {
                 <div className="w-3/5 pl-10 footer-main-box2">
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">About Riyadh Bus</p>
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">Explore Routes</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">Explore Routes</p>
                     </div>
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">Tickets & fares</p>
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">PLAN YOUR TRIP</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">PLAN YOUR TRIP</p>
                     </div>
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">contact us</p>
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">FAQs</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">FAQs</p>
                     </div>
                 </div>
             </div>

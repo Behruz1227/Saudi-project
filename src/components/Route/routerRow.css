@@ -257,8 +257,6 @@ input:checked~.collapsible-item-content {
   .container-top h1 {
     font-size: 3.5rem;
   }
-
-
   .text-bottom {
     width: 100%;
     display: flex;
@@ -304,7 +302,7 @@ input:checked~.collapsible-item-content {
   }
 
   .routerBtn {
-    width: 100%;
+    width: 75%;
     margin-bottom: 10px;
   }
 

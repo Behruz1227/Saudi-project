@@ -8,7 +8,7 @@ import RouterRow from './routerRow'
 const Routerr = () => {
   return (
     <>
-      <div className={` ${styles.flexCenter} container-top`} >
+      <div className={` ${styles.flexCenter} container-top container`} >
           <img src={routeimg} alt="route" className='relative z-[-1]' />
           <h1 className=' head absolute top-[27%] left-[10%] text-[65px] text-white '>Route</h1>
       </div>

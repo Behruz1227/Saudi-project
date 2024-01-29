@@ -16,10 +16,10 @@ import {
 const Footer = () => {
     return (
         <div className="footer-main w-full p-24 pb-0">
-            <div className="flex justify-between items-start w-full text-white opacity-90">
-                <div className="w-2/5">
+            <div className="flex justify-between items-start w-full text-white opacity-90 footer-main-box">
+                <div className="w-2/5 footer-main-box1">
                     <img src={brand} alt="footerLogo" className="cursor-pointer opacity-100" />
-                    <div className="pr-10 mt-5">
+                    <div className="pr-10 mt-8 lg:mt-6">
                         <p className="flex justify-between items-center">
                             <span className="opacity-75">
                                 <img src={phone} alt="number" className="w-5 inline-block -mt-1 mr-5" />
@@ -38,7 +38,7 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-3/5 pl-10">
+                <div className="w-3/5 pl-10 footer-main-box2">
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">About Riyadh Bus</p>
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">Explore Routes</p>
@@ -56,7 +56,7 @@ const Footer = () => {
 
             <div
                 className="py-4 mt-20 border-y border-y-slate-600 w-full text-white opacity-90
-                flex justify-between items-center">
+                flex justify-between items-center footer-networks">
                 <div className="flex justify-start items-center">
                     <span className="text-[1rem]">FOLLOW US</span>
                     <img className="ml-8 hover:cursor-pointer hover:-mt-1 duration-300" src={facebook} alt="facebook" />
@@ -78,7 +78,10 @@ const Footer = () => {
                     <div className="p-10 flex justify-between items-center">
                         <div className="flex justify-start items-center">
                             <img src={layerBrand} alt="img" className="w-16 h-16 shadow-xl" />
-                            <p className="text-[1.2rem] ml-4 font-semibold tracking-wider leading-7">Download the Riyadh <br /> Bus app</p>
+                            <p className="text-[1.2rem] ml-4 font-semibold tracking-wider leading-7">
+                                Download the Riyadh <br /> Bus app <br />
+                                <span className="font-normal sm:hidden">Scan to download</span>
+                            </p>
                         </div>
                         <div className="flex justify-end items-center">
                             <img src={appleButton} alt="img" className="w-32 h-10 ml-4 shadow-xl cursor-pointer hover:-mt-1 duration-200" />

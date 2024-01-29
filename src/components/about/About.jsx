@@ -32,7 +32,7 @@ const About = () => {
                 </div>
             </div>
             <div className="mt-40">
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
     )

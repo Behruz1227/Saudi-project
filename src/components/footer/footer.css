@@ -1,3 +1,35 @@
 .footer-main {
     background-color: #262626;
 }
+
+@media (max-width: 1100px) {
+    .footer-main-box {
+        flex-wrap: wrap;
+    }
+
+    .footer-main-box1 {
+        width: 70%;
+    }
+
+    .footer-main-box2 {
+        width: 100%;
+        margin-top: 2.5rem;
+        padding-left: 0;
+    }
+
+    .footer-networks {
+        flex-wrap: wrap;
+        border-bottom: none;
+        border-top-color: rgba(116, 116, 116, 0.686);
+        margin-top: 5rem;
+    }
+
+    .footer-networks div:nth-child(1) {
+        width: 100%;
+    }
+
+    .footer-networks div:nth-child(2) {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

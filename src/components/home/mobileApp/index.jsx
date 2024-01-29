@@ -49,13 +49,13 @@ function MobilApp() {
                 </div>
             </div>
 
-            <div className='w-full h-max py-44 flex lg:flex-row flex-col-reverse'>
+            <div className='w-full h-max pt-44 flex lg:flex-row flex-col-reverse'>
                 <div className='lg:w-5/12 w-full h-[600] flex flex-col items-center relative'>
                     <div className='w-full h-[300px] flex items-center bg-gray-200'>
                         <div><img src={vektor} alt="" className='h-[300px]' /></div>
                         <div><h1 className='px-10'>New look, more routes, more stations.</h1></div>
                     </div>
-                    <div className='w-full h-[300px] bg-gray-200'>
+                    <div className='w-full h-[300px] md:block hidden bg-gray-200'>
                         <div className='bg-white w-full h-[300px] rounded-tr-3xl'></div>
                     </div>
                 </div>

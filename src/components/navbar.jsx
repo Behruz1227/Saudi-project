@@ -59,7 +59,7 @@ const Navbar = () => {
                     <a href="" className=" text-black px-10 py-2 text-sm font-">Tickets</a>
                     <a href="" className=" text-black px-10 py-2 text-sm font-">About</a>
                     <a href="" className=" text-black px-10 py-2 text-sm font-">Contact</a>
-          
+                    <img src="" alt="" />
                   </div>
       
                 </div>

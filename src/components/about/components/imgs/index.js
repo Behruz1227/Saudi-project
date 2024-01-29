@@ -10,6 +10,7 @@ import googleIcon from './googleIcon.png'; //ishlatildi
 import next from './next.png'; //ishlatildi
 import p from './p.png'; //ishlatildi
 import fBuss from './fBuss.png'; //ishlatildi
+import mobile from './mobile.png'; //ishlatildi
 
 export {
     // one page bg
@@ -28,6 +29,7 @@ export {
     images,
     appleIcon,
     googleIcon,
+    mobile,
 
     // oxirgi pages
     next,

@@ -11,7 +11,16 @@ import rectangle from './route/rectangle.png'
 import vector from './route/Vector.svg'
 import kvadrat from "./tickets/kvadrat.png"
 import frame from "./tickets/Frame (2).png"
-import group from "./tickets/Group.png"
+import mobile from "./tickets/mobile.png"
+import round from './tickets/Group1.png'
+import card from './tickets/card1.png'
+import card1 from './tickets/Group2.png'
+import carta from './tickets/carta.png'
+import bus from './tickets/bus.png'
+import group3 from './tickets/Group3.png'
+import payment from './tickets/payment.png'
+import logoimage from './tickets/logo (2).png'
+import appleimg from './tickets/appleimg.png'
 
 
 export {
@@ -23,10 +32,19 @@ export {
     routeimg,
     kvadrat,
     frame,
-    group,
     routerr,
     rectangle,
     location,
     busAcardion,
-    vector
+    vector,
+    mobile,
+    round,
+    card,
+    card1,
+    carta,
+    bus,
+    group3,
+    payment,
+    logoimage,
+    appleimg
 }

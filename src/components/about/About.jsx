@@ -5,6 +5,7 @@ import Statistics from "./components/Statistics";
 import Cards from "./components/Cards";
 import Services from "./components/Services";
 import LastInfoPage from "./components/LastInfoPage";
+import Footer from "../footer/Footer";
 
 const About = () => {
     return (
@@ -16,7 +17,7 @@ const About = () => {
             <div className="mt-20">
                 <Information />
             </div>
-            <div className="flex justify-center items-start flex-wrap">
+            <div className="flex flex-col">
                 <div className="mt-24">
                     <Statistics />
                 </div>
@@ -29,6 +30,9 @@ const About = () => {
                 <div className="mt-20">
                     <LastInfoPage />
                 </div>
+            </div>
+            <div className="mt-40">
+                <Footer />
             </div>
         </div>
     )

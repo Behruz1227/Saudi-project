@@ -12,3 +12,7 @@
     .scroll-x::-webkit-scrollbar {
     width: 10px;
 }
+.plan-trip {
+    background-image: url('../../assets/home-page/karta.png');
+    /* background-position: left center; */
+}

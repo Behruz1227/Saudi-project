@@ -4,9 +4,13 @@ import navbarlo from './NavbarAsist/navbarlo.svg'
 import navbarlo1 from './NavbarAsist/navbarlogo1.svg'
 import navbarlo2 from './NavbarAsist/navbarlo2.svg'
 import routeimg from './route/mask_group.png'
+import  routerr from './route/routerr.svg'
+import location from './route/location.svg'
+import busAcardion from './route/Bus.svg'
+import rectangle from './route/rectangle.png'
+import vector from './route/Vector.svg'
 import kvadrat from "./tickets/kvadrat.png"
 import frame from "./tickets/Frame (2).png"
-
 import mobile from "./tickets/mobile.png"
 import round from './tickets/Group1.png'
 import card from './tickets/card1.png'
@@ -18,6 +22,7 @@ import payment from './tickets/payment.png'
 import logoimage from './tickets/logo (2).png'
 import appleimg from './tickets/appleimg.png'
 
+
 export {
     home,
     chipta,
@@ -27,6 +32,11 @@ export {
     routeimg,
     kvadrat,
     frame,
+    routerr,
+    rectangle,
+    location,
+    busAcardion,
+    vector,
     mobile,
     round,
     card,
@@ -37,5 +47,4 @@ export {
     payment,
     logoimage,
     appleimg
-
 }

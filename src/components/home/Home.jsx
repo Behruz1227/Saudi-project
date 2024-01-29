@@ -14,14 +14,14 @@ function Home() {
 
   return (
     <>
-      <div className='w-full md:px-20 sm:px-5 px-3 lg:py-10 py-5'>
+      <div className='w-full md:px-20 sm:px-5 px-0 lg:py-10 py-5'>
         {/* <TripplanFirs/> */}
-        {/* <MobilApp/> */}
+        <MobilApp/>
         <Tripplan/>
       </div>
-      <BusPlan/>
-      <MaterSafety />
-      <Galery />
+      {/* <BusPlan/> */}
+      {/* <MaterSafety /> */}
+      {/* <Galery /> */}
     </>
 
   )

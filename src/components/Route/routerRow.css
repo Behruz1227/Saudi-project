@@ -1,0 +1,338 @@
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.container {
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-top {
+  margin-top: 30px;
+}
+
+
+.collapsible-accordion {
+  margin: 10px;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-item-label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.collapsible-item-label::after {
+  content: "\2192";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+  color: #6FD44F;
+}
+
+.collapsible-item-content {
+  max-height: 0;
+  padding: 0 1em;
+  background: #F0F0F0;
+  transition: all 0.35s;
+}
+
+input:checked+.collapsible-item-label::after {
+  transform: rotate(90deg);
+}
+
+input:checked~.collapsible-item-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+@media only screen and (max-width:460px){
+  .text-top-img{
+    display: none;
+  }
+  .headingDiv{
+    padding: 0;
+  }
+  .headingDiv h1{
+    font-size: 1.5rem;
+  }
+  .heading-tags-color{
+    margin:0;
+  }
+  .routerBtn{
+    flex-direction: column;
+    text-align: center;
+  }
+  .routerBtn button{
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (max-width:600px) {
+  .container-top {
+    width: 100%;
+  }
+
+  .container-top img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .container-top h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-top-container {
+    width: 100%;
+  }
+
+  .text-top-container p,
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .text-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .text-bottom p {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .routerBtn {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .routerBtn .routerThird p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+  }
+
+  .routerBtn .routerBot {
+    width: 100%;
+  }
+  .collapsible-item-label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .collapsible-accordion img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.8rem;
+  }
+
+  .collapsible-accordion button {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+
+@media only screen and (max-width:768px) {
+  .container-top img {
+    width: 100%;
+  }
+  .container-top h1 {
+    font-size: 3.5rem;
+  }
+
+
+  .text-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-top-container {
+    width: 100%;
+  }
+
+  .text-top-container p,
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  .text-top-container h1{
+    margin-top: 0;
+
+  }
+
+  .text-bottom {
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .text-bottom p {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0;
+  }
+  .text-bottom .textbottomp1{
+    margin-top: 0;
+  }
+
+  .routerBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .routerBtn img {
+    width: 40px;
+    height: 70px;
+  }
+
+  .routerBtn .routerThird {
+    width: 100%;
+  }
+
+  .routerBtn .routerThird p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .routerBtn .routerForth button {
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+  .routerBot{
+    width: 100%;
+    margin:1.5rem;
+  }
+  .collapsible-item-label {
+    width: 100%;
+  } 
+}
+@media only screen and (max-width:992px){
+  .container-top img {
+    width: 100%;
+  }
+  .container-top h1 {
+    font-size: 3.5rem;
+  }
+
+
+  .text-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-top-container {
+    width: 100%;
+  }
+
+  .text-top-container p,
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  .text-top-container h1{
+    margin-top: 0;
+
+  }
+
+  .text-bottom {
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .text-bottom p {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0;
+  }
+  .text-bottom .textbottomp1{
+    margin-top: 0;
+  }
+
+  .routerBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .routerBtn img {
+    width: 40px;
+    height: 70px;
+  }
+
+  .routerBtn .routerThird {
+    width: 100%;
+  }
+
+  .routerBtn .routerThird p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .routerBtn .routerForth button {
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+  .routerBot{
+    width: 100%;
+    margin:1.5rem;
+  }
+  
+  /* .collapsible-item-label {
+    width: 100%;
+  }    */
+}

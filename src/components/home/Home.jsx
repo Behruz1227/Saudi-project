@@ -1,7 +1,4 @@
 import React from 'react'
-
-
-
 import "./style.css"
 import TripplanFirs from './firstsection'
 import MobilApp from './mobileApp'
@@ -24,9 +21,9 @@ function Home() {
       </div>
       {/* <BusPlan/> */}
 
-      {/* <MaterSafety/> */}
+      <MaterSafety/>
 
-      <Galery/>
+      {/* <Galery/> */}
 
     </>
 

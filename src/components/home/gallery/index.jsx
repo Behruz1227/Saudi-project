@@ -11,22 +11,21 @@ import eight from "../../../assets/home-page/gallery/eightth.png"
 function Galery() {
     return (
         <div className="h-max">
-            <div className='text-center px-10 pb-5'>
-                <h1 className="text-4xl font-bold my-4">More from Riyadh Bus</h1>
-                <h2 className="text-lg">#Riyadh #RoyalCommissionForRiyadhCity #Riyadh_bus</h2>
+            <div className='text-center px-10 pb-5 h-max md:mb-20'>
+                <h1 className="text-4xl font-bold my-4 text-green-900">More from Riyadh Bus</h1>
+                <h2 className="text-lg text-sky-600">#Riyadh #RoyalCommissionForRiyadhCity #Riyadh_bus</h2>
             </div>
-            <div className="flex justify-around h-max">
-                {/* Birinchi qator - uchta tasvir */}
-                <div className="w-[64%] h-max flex justify-between">
-                    <div className="w-[49%] h-[700px] flex flex-col justify-end">
-                        <div className='w-full h-[400px] flex justify-end items-end'>
-                            <img src={first} alt="Image 1" className="w-[200px] object-cover rounded-lg shadow" />
+            <div className="w-full lg:px-0 md:px-10 sm:px-5 px-3 h-max flex xl:justify-around justify-start items-center xl:flex-row flex-col">
+                <div className="lg:w-[64%] w-full h-max flex justify-between xl:flex-row flex-col">
+                    <div className="xl:w-[49%] w-full xl:h-[700px] h-max flex flex-col justify-end">
+                        <div className='w-full lg:h-[400px] flex xl:justify-end justify-center items-end'>
+                            <img src={first} alt="Image 1" className="xl:w-[200px] w-full  object-cover rounded-lg shadow" />
                         </div>
                         <div className='pt-5'>
                             <img src={first} alt="Image 1" className="w-full object-cover rounded-lg shadow" />
                         </div>
                     </div>
-                    <div className='w-[48%] h-[700px] flex flex-col justify-end'>
+                    <div className='xl:w-[48%] w-full xl:h-[700px] h-max flex flex-col justify-end xl:mt-0 mt-5'>
                         <div className="w-full h-[285px]">
                             <img src={eight} alt="" className="w-full h-full object-cover rounded-lg " />
                         </div>
@@ -39,9 +38,9 @@ function Galery() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[32%] h-[700px] flex flex-col justify-end">
-                    <div className='w-full h-[400px] flex justify-start items-end'>
-                        <img src={first} alt="Image 1" className="w-[200px] object-cover rounded-lg shadow" />
+                <div className="xl:w-[32%] lg:w-[64%] w-full xl:h-[700px] xl_mt-0 mt-5 flex flex-col justify-end">
+                    <div className='w-full xl:h-[400px] flex justify-start items-end'>
+                        <img src={first} alt="Image 1" className="xl:w-[200px] w-full object-cover rounded-lg shadow" />
                     </div>
                     <div className='pt-5'>
                         <img src={first} alt="Image 1" className="w-full object-cover rounded-lg shadow" />

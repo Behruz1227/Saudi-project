@@ -2,7 +2,7 @@ import { p, fBuss, next } from "./imgs/index";
 
 const LastInfoPage = () => {
     return (
-        <div className="w-[1100px] flex justify-between items-start">
+        <div className="max-w-[1100px] mx-auto flex justify-between items-start about-last-main">
             <div className="w-1/3 h-[290px] p-5 hover:shadow-lg hover:-mt-3 rounded-xl duration-200 mr-4">
                 <img className="w-12 hover:scale-110 duration-200 hover:cursor-pointer" src={fBuss} alt="fbuss" />
                 <h3 className="mt-7 font-bold text-[1.2rem] tracking-wide leading-5">

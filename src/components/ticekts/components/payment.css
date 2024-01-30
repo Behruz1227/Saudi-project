@@ -2,3 +2,58 @@
     background-image: url("./../../../assets/tickets/carta.png");
 }
 
+@media(max-width:768px){
+    .cradTicekt{
+        position: flex;
+        flex-direction: column;
+        
+    }
+    .purText{
+        position: flex;
+        font-size: 16px;
+        width: 110%;
+        height: 20px;  
+    }
+    .mobileCard{
+       
+        width: full;
+        height: 600px;
+        justify-content: center;
+    }
+    .buyText{
+        position: relative;
+        width: 200px;
+        height: 100px;
+        font-size: 16px;
+        
+    }
+    
+    .BytextDiv{
+        
+        width: 270px;
+        height: 100px;
+        left: 100px;
+        position: absolute;
+       
+    }
+    .text-by{
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .mobile{
+        width: 200px;
+        position: absolute;
+        top: 2350px;
+    }
+    .rounded {
+        position: flex;
+        width: 200px;
+        
+    }
+   
+}
+
+

@@ -2,21 +2,21 @@ import { card, card1, carta, group3, mobile, payment, round } from "../../../ass
 
 function MobileCard(){
     return(
-        <div className="justify-center px-20 my-8">
-             <div className="container w-full px-6 py-6 flex justify-around bg-green-950 rounded-3xl mt-4">
-                <div className="rounded">
+        <div className="justify-center px-20 my-8 mobileCard">
+             <div className="container w-full px-4 py-3 md:w-full flex justify-around bg-green-950 rounded-3xl mt-4 mobileCard">
+                <div className="rounded ">
                    <img src={round} alt="" className="" />
                 </div>
                 <div className=" px-10 pt-16 pl-2 py-8 text-4xl text-green-500">
-                    <h1>Buy monthly, weekly and <br/> daily passes on Riyadh<br/> Bus app</h1>
-                    <div className="text-white tracking-wide">
-                         <p className="text-xl mt-10 ">Buy your choice of pass and scan the<br/> 
+                    <h1 className="buyText">Buy monthly, weekly and <br/> daily passes on Riyadh<br/> Bus app</h1>
+                    <div className="text-white tracking-wide BytextDiv">
+                         <p className="text-xl mt-10 text-by ">Buy your choice of pass and scan the<br/> 
                          digital QR code for your next ride.</p>
                     </div>
                    
                 </div>
              
-            <div className="">
+            <div className="mobile">
             
            <img src={mobile} alt="" />
 

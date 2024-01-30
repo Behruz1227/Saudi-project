@@ -1,5 +1,6 @@
 import { routeimg, } from '../../assets'
 import { brandingElement } from '../about/components/imgs'
+import Footer from '../footer/Footer'
 import { styles } from '../style'
 import RouterBottom from './routerBottom'
 import RouterBtn from './routerBtn'
@@ -46,6 +47,7 @@ const Routerr = () => {
         <RouterRow id="2"/>
         <RouterRow id="3"/>
       </div>
+      <Footer/>
 
     </>
 

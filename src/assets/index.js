@@ -21,6 +21,9 @@ import group3 from './tickets/Group3.png'
 import payment from './tickets/payment.png'
 import logoimage from './tickets/logo (2).png'
 import appleimg from './tickets/appleimg.png'
+import message from './contact/call.svg'
+import answer  from './contact/message.svg'
+import  call from './contact/answer.svg'
 
 
 export {
@@ -46,5 +49,8 @@ export {
     group3,
     payment,
     logoimage,
-    appleimg
+    appleimg,
+    call,
+    message,
+    answer,
 }

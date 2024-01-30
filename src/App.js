@@ -4,6 +4,7 @@ import About from './components/about/About';
 import Navbar from './components/navbar';
 import Tickets from './components/ticekts/Tickets';
 import Routerr from './components/Route/routerr';
+import Contactus from './components/contact/contactUs';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Route path='/about' element={<About />} />
       <Route path='/navbar' element={<Navbar />} />
       <Route path='/routerr' element={<Routerr />} />
-      <Route path='/tickets' element={<Tickets />} />
+      <Route path='/contactUs' element={<Contactus/>}/>
+      <Route path='/tickets' element={<Tickets />}/>
     </Routes>
   );
 }

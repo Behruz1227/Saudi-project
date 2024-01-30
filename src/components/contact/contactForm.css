@@ -1,41 +1,82 @@
-@media only screen and (max-width:576px){
-  .main-contact-form .contact-image{
+
+.contactForm .InputForm{
+  width:100%;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #F0F0F0;
+  font-size: 0.9rem;
+  outline: none;
+}
+.contactForm .InputForm::placeholder{
+  color: #737373;
+}
+.contactForm .contactTextarea{
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width:100%;
+  border: 1px solid #F0F0F0;
+  font-size: 0.9rem;
+  outline: none;
+}
+.contactForm .contactTextarea::placeholder{
+  color: #737373;
+} 
+.contactForm .contactAfisha{
+  width: 35%;
+}
+
+@media only screen and (max-width:576px) {
+  .main-contact-form .contact-image {
     display: none;
   }
-  .main-contact-form .contactForm .firstP{
+  .main-contact-form .contactForm{
+    margin: 0 auto;
+  }
+
+  .main-contact-form .contactForm .firstP {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 0.75rem;
   }
-  .main-contact-form .contactForm .firsth1{
+
+  .main-contact-form .contactForm .firsth1 {
     width: 100%;
     font-size: 1.8rem;
     text-align: center;
   }
-  .main-contact-form .contactForm .contactLine{
+
+  .main-contact-form .contactForm .contactLine {
     margin-top: 1.25rem;
   }
 }
-@media only screen and (max-width:768px){
-  .main-contact-form .contact-image{
+
+@media only screen and (max-width:768px) {
+  .main-contact-form .contact-image {
     display: none;
   }
-  .main-contact-form .contactForm .firstP{
+  .main-contact-form .contactForm{
+    margin: 0 auto;
+  }
+
+  .main-contact-form .contactForm .firstP {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 0.75rem;
   }
-  .main-contact-form .contactForm .firsth1{
+
+  .main-contact-form .contactForm .firsth1 {
     width: 100%;
     font-size: 1.8rem;
     text-align: center;
   }
-  .main-contact-form .contactForm .contactLine{
+
+  .main-contact-form .contactForm .contactLine {
     margin-top: 1.25rem;
   }
 }
-@media only screen and (max-width:992px){
-  .main-contact-form .contact-image{
+
+@media only screen and (max-width:992px) {
+  .main-contact-form .contact-image {
     width: 8rem;
   }
 }

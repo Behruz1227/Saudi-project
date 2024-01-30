@@ -208,6 +208,11 @@
 }
 
 @media (max-width: 400px) {
+    .aboutOnePage-main {
+        height: 35vh;
+        object-position: center;
+    }
+
     .services_buttons {
         width: 35%;
         height: 2rem;

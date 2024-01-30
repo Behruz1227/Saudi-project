@@ -10,7 +10,7 @@ const Navbars = () => {
     const openDropDown = () => setIsOpenDrop(!isOpenDrop);
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-3 rounded-xl mx-3 shadow-lg z-50">
+        <nav className="bg-white border-gray-200 sticky top-3 rounded-xl mx-3 shadow-lg z-50">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={logoimage} className="h-8" alt="Logo" />
@@ -20,7 +20,7 @@ const Navbars = () => {
                     <button
                         onClick={openDropDown}
                         className="text-black font-bold rounded-lg text-[1.2rem] text-center 
-                        inline-flex items-center tracking-widest hover:text-blue-700 duration-300">
+                        inline-flex items-center tracking-widest hover:opacity-70 duration-300">
                         العربية
                         <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
@@ -28,28 +28,20 @@ const Navbars = () => {
                     </button>
                     <div
                         className={`z-10 ${isOpenDrop ? 'inline-block' : 'hidden'} bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-40 
-                        dark:bg-gray-700 absolute top-[4.2rem] right-3`}>
+                        absolute top-[4.2rem] right-3`}>
                         <ul
                             className="py-2 text-sm text-gray-700">
                             <li>
-                                <Link
-                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 
-                                    dark:hover:text-white">Drop 1</Link>
+                                <Link className="block px-4 py-2 hover:bg-gray-100">Drop 1</Link>
                             </li>
                             <li>
-                                <Link
-                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 
-                                    dark:hover:text-white">Drop 2</Link>
+                                <Link className="block px-4 py-2 hover:bg-gray-100">Drop 2</Link>
                             </li>
                             <li>
-                                <Link
-                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 
-                                    dark:hover:text-white">Drop 3</Link>
+                                <Link className="block px-4 py-2 hover:bg-gray-100">Drop 3</Link>
                             </li>
                             <li>
-                                <Link
-                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 
-                                    dark:hover:text-white">Drop 4</Link>
+                                <Link className="block px-4 py-2 hover:bg-gray-100">Drop 4</Link>
                             </li>
                         </ul>
                     </div>
@@ -57,13 +49,8 @@ const Navbars = () => {
 
                     <button
                         onClick={openMenu}
-                        data-collapse-toggle="navbar-cta"
-                        type="button"
                         className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 
-                        rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200
-                        dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-cta"
-                        aria-expanded="false">
+                        rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
                         <span className="sr-only">Open navbar menu</span>
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
@@ -77,8 +64,7 @@ const Navbars = () => {
                     id="navbar-cta">
                     <ul
                         className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
-                        bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
-                        md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         <li>
                             <Link
                                 to="/"
@@ -119,49 +105,45 @@ const Navbars = () => {
             </div>
 
             {/* mobile nav */}
-            <div className={`${isOpen ? 'inline' : 'hidden'}`}>
+            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg text-center' : 'hidden'}`}>
                 <ul
                     className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
                         bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
-                        md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        md:bg-white">
                     <li>
                         <Link
+                            onClick={openMenu}
                             to="/"
-                            className="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded 
-                                md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                            aria-current="page">Plan</Link>
+                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+                            md:hover:bg-transparent md:hover:text-blue-700">Plan</Link>
                     </li>
                     <li>
                         <Link
+                            onClick={openMenu}
                             to="/routerr"
                             className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">Routes</Link>
+                            md:hover:bg-transparent md:hover:text-blue-700">Routes</Link>
                     </li>
                     <li>
                         <Link
+                            onClick={openMenu}
                             to="/tickets"
                             className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">Tickets</Link>
+                            md:hover:bg-transparent md:hover:text-blue-700">Tickets</Link>
                     </li>
                     <li>
                         <Link
+                            onClick={openMenu}
                             to="/about"
                             className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">About</Link>
+                            md:hover:bg-transparent md:hover:text-blue-700">About</Link>
                     </li>
                     <li>
                         <Link
+                            onClick={openMenu}
                             to="/contactUs"
                             className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+                            md:hover:bg-transparent md:hover:text-blue-700">Contact</Link>
                     </li>
                 </ul>
             </div>
@@ -169,4 +151,4 @@ const Navbars = () => {
     )
 }
 
-export default Navbars
+export default Navbars;

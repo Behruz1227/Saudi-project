@@ -2,8 +2,8 @@ import { card, card1, carta, group3, mobile, payment, round } from "../../../ass
 
 function MobileCard(){
     return(
-        <div className="justify-center px-28">
-             <div className="container w-full px-6 py-6 flex justify-around bg-green-950 rounded-3xl ">
+        <div className="justify-center px-20 my-8">
+             <div className="container w-full px-6 py-6 flex justify-around bg-green-950 rounded-3xl mt-4">
                 <div className="rounded">
                    <img src={round} alt="" className="" />
                 </div>
@@ -22,7 +22,7 @@ function MobileCard(){
 
          </div>
         </div>
-        <div className="container w-full mt-10 py-6 flex justify-center bg-lime-500 rounded-3xl  ">
+        <div className="container w-full mt-10 py-6 flex justify-center bg-lime-500 rounded-3xl pt-10   ">
                 <div className="rounded">
                    <img src={card1} alt="" />
                 </div>
@@ -43,8 +43,8 @@ function MobileCard(){
 
          </div>
         </div>
-        <div className="container w-full mt-10 py-6 flex justify-center bg-white-500 rounded-3xl  ">
-                <div className="rounded">
+        <div className="container w-full mt-20 py-6 flex justify-center bg-white-500 rounded-3xl  ">
+                <div className="rounded  ">
                    <img src={group3} alt="" />
                 </div>
                 <div className=" px-10 pt-16 pl-2 py-8 text-4xl text-black font-bold ">

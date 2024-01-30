@@ -9,4 +9,4 @@ function QuestionsFull(){
         </div>
         
     )
-}
+} export default QuestionsFull

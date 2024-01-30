@@ -48,6 +48,12 @@
   .main-contact-form .contactForm .contactLine {
     margin-top: 1.25rem;
   }
+  .sendBtn{
+    /* justify-content: center; */
+    width: 10rem;
+    padding: 1rem;
+    margin-left: 2rem;
+  }
 }
 
 @media only screen and (max-width:768px) {

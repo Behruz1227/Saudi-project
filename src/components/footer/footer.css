@@ -42,4 +42,119 @@
     .footer-main-box2 {
         padding-right: 0;
     }
+
+    .footer-card-bottom {
+        flex-wrap: wrap;
+    }
+
+    .footer-card-bottom div:nth-child(1) {
+        width: 100%;
+    }
+
+    .footer-card-bottom div:nth-child(2) {
+        width: 100%;
+        justify-content: left;
+        margin-top: 2rem;
+    }
+
+    .footer-card-bottom div:nth-child(2) img:nth-child(1) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 724px) {
+    .footer-networks div:nth-child(2) span:nth-child(2) {
+        display: none;
+    }
+
+    .footer-networks div:nth-child(2) span:nth-child(4) {
+        display: none;
+    }
+
+    .footer-networks div:nth-child(2) span {
+        display: block;
+        margin-top: 1.5rem;
+    }
+
+    .footer-card-bottom div:nth-child(1) {
+        flex-wrap: wrap;
+    }
+
+    .footer-card-bottom div:nth-child(1) p {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-main {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .footer-main-parg {
+        flex-wrap: wrap;
+    }
+
+    .footer-main-parg span {
+        width: 100%;
+    }
+
+    .footer-main-parg span:nth-child(2) {
+        margin-left: 2.5rem;
+    }
+
+    .footer-main-links {
+        flex-wrap: wrap;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-main-links p {
+        width: 100%;
+        text-align: left;
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #535252bd;
+    }
+
+    .footer-networks div:nth-child(1) {
+        flex-wrap: wrap;
+    }
+
+    .footer-networks div:nth-child(1) span {
+        width: 100%;
+        letter-spacing: 3px;
+    }
+
+    .footer-networks div:nth-child(1) img {
+        margin-left: 0;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+
+    .footer-card-bottomIcon {
+        display: block;
+    }
+
+    .footer-card-bottomIcon img {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 387px) {
+    .footer-main-brHidden {
+        display: none;
+    }
+
+    .footer-card-bottom {
+        padding-left: 1.5rem;
+    }
+
+    .footer-card-bottom {
+        padding-right: 1.5rem;
+    }
 }

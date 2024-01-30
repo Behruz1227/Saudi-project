@@ -1,5 +1,5 @@
-import { kvadrat } from "../../assets";
-import bus from './img/bus road move 1.png'
+import { bus, kvadrat } from "../../assets";
+
 
 function QuestionsOne() {
   return (
@@ -168,14 +168,14 @@ function QuestionsOne() {
                     </div>
                    
                 </div>
-                 <div className="w-full justify-center items-center mt-20">
-                        <h3 className="justify-center align-items-center text-3xl ml-48 ">We're here to show the <br/>
+                 <div className="w-full justify-center items-center mt-20 ml-32">
+                        <h3 className="justify-center align-items-center text-3xl ml-48 font-bold">We're here to show the <br/>
                         <span className="justify-center ml-28"
                          style={{ color: "#00CF00" }}
                           >way.</span> </h3>
                     </div>
-                <div className="justify-center">
-                    <img src= {{bus}} alt="Rasm yuq" />
+                <div className="mt-20">
+                    <img src= {bus} alt="Rasm yuq" />
                 </div>
             </div>
           </div>

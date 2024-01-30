@@ -4,7 +4,7 @@ import '../Route/routerRow.css'
 const RouterRow = ({id}) => {
   return (
     <>
-    <div className='rounded-xl flex md:w-3/4 w-full justify-сenter  items-center'>
+    <div className='rounded-xl flex md:w-3/4 w-full justify-сenter  items-center mb-5'>
       <div class="collapsible-accordion w-full">
         <div class="collapsible-item">
           <input className='router-input' type="checkbox" id={id} />

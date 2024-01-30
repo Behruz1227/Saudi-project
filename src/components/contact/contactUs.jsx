@@ -2,6 +2,7 @@ import { brandingElement } from '../about/components/imgs'
 import './contactForm.css'
 import ContactForm from './contactForm'
 import ContactRadio from './contactRadio'
+import Footer from '../footer/Footer'
 
 const Contactus = () => {
   return (
@@ -20,6 +21,7 @@ const Contactus = () => {
           <ContactForm />
         </div>
       </div>
+      <Footer/>
 
     </>
 

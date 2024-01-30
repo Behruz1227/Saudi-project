@@ -1,6 +1,5 @@
 import React from 'react'
 import { answer, call, message } from '../../assets'
-import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   return (
@@ -15,10 +14,6 @@ const ContactForm = () => {
         <button className='sendBtn bg-[#6FD44F] w-[15rem] py-5 rounded-[2rem] font-semibold mt-5'>
             Send message
         </button>
-        <ReCAPTCHA
-        className='float-right mt-5'
-        sitekey="6Ld9AmEpAAAAAOJ_k3OTgWJPmxXljZJA0PzjWYQz"
-      />
       </div>
       <div className='contactAfisha'>
         <div className='w-full flex bg-[#FFFFFF] rounded-[0.8rem] my-3'>

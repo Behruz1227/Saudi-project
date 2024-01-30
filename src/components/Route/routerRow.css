@@ -64,10 +64,10 @@
   .headingDiv{
     padding: 0;
   }
-  .headingDiv .heading-tags-color{
+  .headingDiv .heading-tags-colors{
     font-size: 1.5rem;
   }
-  .heading-tags-color{
+  .heading-tags-colors{
     margin:0;
   }
   .routerBtn{
@@ -103,7 +103,7 @@
   }
 
   .text-top-container p,
-  .heading-tags-color {
+  .heading-tags-colors {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -187,7 +187,7 @@
   }
 
   .text-top-container p,
-  .heading-tags-color {
+  .heading-tags-colors {
     font-size: 1.5rem;
     text-align: center;
     
@@ -270,12 +270,12 @@
   }
 
   .text-top-container p,
-  .heading-tags-color {
+  .heading-tags-colors {
     font-size: 1.5rem;
     text-align: center;
     
   }
-  .text-top-container .heading-tags-color{
+  .text-top-container .heading-tags-colors{
     margin-top: 0;
 
   }

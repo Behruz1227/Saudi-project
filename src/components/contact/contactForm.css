@@ -52,7 +52,10 @@
     /* justify-content: center; */
     width: 10rem;
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: 5rem;
+  }
+  .reacptcha{
+    display: none;
   }
 }
 
@@ -79,6 +82,7 @@
   .main-contact-form .contactForm .contactLine {
     margin-top: 1.25rem;
   }
+  
 }
 
 @media only screen and (max-width:992px) {

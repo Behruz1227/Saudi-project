@@ -20,7 +20,7 @@ const Routerr = () => {
           </div>
           <div className='headingDiv w-full pl-5'>
             <p className='text-[1.2rem] tracking-wide font-medium' style={{ color: "#00CF00" }}>OVERVIEW</p>
-            <h1 className='sm:mt-10 md:mt-10  text-[2rem] font-bold heading-tags-color'>
+            <h1 className='sm:mt-10 md:mt-10  text-[2rem] font-bold heading-tags-colors'>
               Quickly access <br />
               your favorite <br />
               destinations <br />

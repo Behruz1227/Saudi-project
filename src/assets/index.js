@@ -23,7 +23,6 @@ import logoimage from './tickets/logo (2).png'
 import appleimg from './tickets/appleimg.png'
 
 
-
 export {
     home,
     chipta,

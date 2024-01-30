@@ -1,4 +1,4 @@
-import { rectangle, routeimg, } from '../../assets'
+import { routeimg, } from '../../assets'
 import { brandingElement } from '../about/components/imgs'
 import { styles } from '../style'
 import RouterBottom from './routerBottom'
@@ -8,7 +8,7 @@ import RouterRow from './routerRow'
 const Routerr = () => {
   return (
     <>
-      <div className={` ${styles.flexCenter} container-top container`} >
+      <div className={` ${styles.flexCenter} container-top containerr`} >
           <img src={routeimg} alt="route" className='relative z-[-1]' />
           <h1 className=' head absolute top-[27%] left-[10%] text-[65px] text-white '>Route</h1>
       </div>
@@ -19,7 +19,7 @@ const Routerr = () => {
           </div>
           <div className='headingDiv w-full pl-5'>
             <p className='text-[1.2rem] tracking-wide font-medium' style={{ color: "#00CF00" }}>OVERVIEW</p>
-            <h1 className='sm:mt-10 md:mt-10  text-[2rem] font-bold tracking-wide heading-tags-color'>
+            <h1 className='sm:mt-10 md:mt-10  text-[2rem] font-bold heading-tags-color'>
               Quickly access <br />
               your favorite <br />
               destinations <br />

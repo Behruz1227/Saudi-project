@@ -3,12 +3,7 @@ input {
   opacity: 0;
   z-index: -1;
 }
-
-h1 {
-  margin: 10px;
-}
-
-.container {
+.containerr {
   max-width: 95vw;
   margin: 0 auto;
   padding: 0 20px;
@@ -69,7 +64,7 @@ input:checked~.collapsible-item-content {
   .headingDiv{
     padding: 0;
   }
-  .headingDiv h1{
+  .headingDiv .heading-tags-color{
     font-size: 1.5rem;
   }
   .heading-tags-color{
@@ -108,7 +103,7 @@ input:checked~.collapsible-item-content {
   }
 
   .text-top-container p,
-  h1 {
+  .heading-tags-color {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -192,7 +187,7 @@ input:checked~.collapsible-item-content {
   }
 
   .text-top-container p,
-  h1 {
+  .heading-tags-color {
     font-size: 1.5rem;
     text-align: center;
     
@@ -275,12 +270,12 @@ input:checked~.collapsible-item-content {
   }
 
   .text-top-container p,
-  h1 {
+  .heading-tags-color {
     font-size: 1.5rem;
     text-align: center;
     
   }
-  .text-top-container h1{
+  .text-top-container .heading-tags-color{
     margin-top: 0;
 
   }

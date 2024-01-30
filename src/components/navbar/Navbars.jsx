@@ -82,41 +82,37 @@ const Navbars = () => {
                         <li>
                             <Link
                                 to="/"
-                                className="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded 
-                                md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                                aria-current="page">Plan</Link>
+                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
+                                focus:text-yellow-400 focus:font-semibold duration-200">Plan</Link>
                         </li>
                         <li>
                             <Link
                                 to="/routerr"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">Routes</Link>
+                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
+                                focus:text-yellow-400 focus:font-semibold duration-200">Routes</Link>
                         </li>
                         <li>
                             <Link
                                 to="/tickets"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">Tickets</Link>
+                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
+                                focus:text-yellow-400 focus:font-semibold duration-200">Tickets</Link>
                         </li>
                         <li>
                             <Link
                                 to="/about"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">About</Link>
+                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
+                                focus:text-yellow-400 focus:font-semibold duration-200">About</Link>
                         </li>
                         <li>
                             <Link
                                 to="/contactUs"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
-                                md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500
-                                dark:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-                                md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
+                                focus:text-yellow-400 focus:font-semibold duration-200">Contact</Link>
                         </li>
                     </ul>
                 </div>

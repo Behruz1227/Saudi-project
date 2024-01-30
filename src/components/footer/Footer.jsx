@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="w-2/5 footer-main-box1">
                     <img src={brand} alt="footerLogo" className="cursor-pointer opacity-100" />
                     <div className="pr-10 mt-8 lg:mt-6">
-                        <p className="flex justify-between items-center">
+                        <p className="flex justify-between items-center footer-main-parg">
                             <span className="opacity-75">
                                 <img src={phone} alt="number" className="w-5 inline-block -mt-1 mr-5" />
                                 Customer Care:
@@ -29,7 +29,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="pr-10 mt-4">
-                        <p className="flex justify-between items-center">
+                        <p className="flex justify-between items-center footer-main-parg">
                             <span className="opacity-75">
                                 <img src={email} alt="email" className="w-5 inline-block -mt-1 mr-5" />
                                 Email us at:
@@ -39,15 +39,15 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="w-3/5 pl-10 footer-main-box2">
-                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
+                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">About Riyadh Bus</p>
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">Explore Routes</p>
                     </div>
-                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
+                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">Tickets & fares</p>
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">PLAN YOUR TRIP</p>
                     </div>
-                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4">
+                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">contact us</p>
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">FAQs</p>
                     </div>
@@ -74,16 +74,16 @@ const Footer = () => {
             </div>
 
             <div className="flex justify-center items-end w-full mt-24">
-                <div className="rounded-t-[40px] bg-white w-[80%]">
-                    <div className="p-10 flex justify-between items-center">
+                <div className="rounded-t-[30px] sm:rounded-t-[40px] bg-white w-[100%] sm:w-[80%]">
+                    <div className="p-10 flex justify-between items-center footer-card-bottom">
                         <div className="flex justify-start items-center">
                             <img src={layerBrand} alt="img" className="w-16 h-16 shadow-xl" />
                             <p className="text-[1.2rem] ml-4 font-semibold tracking-wider leading-7">
-                                Download the Riyadh <br /> Bus app <br />
-                                <span className="font-normal sm:hidden">Scan to download</span>
+                                Download the Riyadh <br className="footer-main-brHidden" /> Bus app <br />
+                                <span className="font-normal sm:hidden text-[1rem]">Scan to download</span>
                             </p>
                         </div>
-                        <div className="flex justify-end items-center">
+                        <div className="flex justify-end items-center footer-card-bottomIcon">
                             <img src={appleButton} alt="img" className="w-32 h-10 ml-4 shadow-xl cursor-pointer hover:-mt-1 duration-200" />
                             <img src={googleButton} alt="img" className="w-32 h-10 ml-4 shadow-xl cursor-pointer hover:-mt-1 duration-200" />
                         </div>

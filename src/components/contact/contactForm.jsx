@@ -11,6 +11,9 @@ const ContactForm = () => {
         <div className='contactForm2' >
           <textarea className='contactTextarea' placeholder='Type your message here' rows={14} cols={78} />
         </div>
+        <button className='sendBtn bg-[#6FD44F] w-[15rem] py-5 rounded-[2rem] font-semibold mt-5'>
+            Send message
+        </button>
       </div>
       <div className='contactAfisha'>
         <div className='w-full flex bg-[#FFFFFF] rounded-[0.8rem] my-3'>
@@ -24,7 +27,7 @@ const ContactForm = () => {
         </div>
         <div className='w-full flex bg-[#FFFFFF] rounded-[0.8rem] my-4'>
           <div className='p-8'>
-            <img  src={message} alt="call image" className='callImage2'  />
+            <img src={message} alt="call image" className='callImage2' />
           </div>
           <div className='pt-9 items-center'>
             <p className='text-sm font-medium'>Email Us:</p>
@@ -33,7 +36,7 @@ const ContactForm = () => {
         </div>
         <div className='w-full flex bg-[#FFFFFF] rounded-[0.8rem] my-3'>
           <div className='p-8'>
-            <img src={answer} alt="call image" className='callImage'  />
+            <img src={answer} alt="call image" className='callImage' />
           </div>
           <div className='pt-9 items-center'>
             <p className='text-sm font-medium'>FAQs:</p>
@@ -42,7 +45,6 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
-
   )
 }
 

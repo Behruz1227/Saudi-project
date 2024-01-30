@@ -105,7 +105,7 @@ const Navbars = () => {
             </div>
 
             {/* mobile nav */}
-            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg text-center' : 'hidden'}`}>
+            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg text-center rounded-xl overflow-hidden' : 'hidden'}`}>
                 <ul
                     className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
                         bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 

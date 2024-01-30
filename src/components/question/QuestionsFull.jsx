@@ -6,6 +6,7 @@ function QuestionsFull(){
             <QuestionsOne/>
         </div>
         
-    )
-}
-export default QuestionsFull;
+    );
+} export default QuestionsFull
+
+

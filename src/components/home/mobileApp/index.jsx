@@ -49,8 +49,8 @@ function MobilApp() {
                 </div>
             </div>
 
-            <div className='w-full h-max pt-44 flex lg:flex-row flex-col-reverse'>
-                <div className='lg:w-5/12 w-full h-[600] flex flex-col items-center relative'>
+            <div className='w-full h-max md:pt-44 -mt-48 flex lg:flex-row flex-col-reverse'>
+                <div className='lg:w-[40vw] w-full h-[600] flex flex-col items-center relative'>
                     <div className='w-full h-[300px] flex items-center bg-gray-200'>
                         <div><img src={vektor} alt="" className='h-[300px]' /></div>
                         <div><h1 className='px-10'>New look, more routes, more stations.</h1></div>
@@ -60,13 +60,14 @@ function MobilApp() {
                     </div>
                 </div>
 
-                <div className='lg:w-8/12 w-full md:h-[600px] h-max flex flex-col'>
+                <div className='lg:w-[60vw] w-full md:h-[600px] h-max flex flex-col'>
                     <div className='w-full md:h-[300px] h-max flex md:items-end items-center md:flex-row flex-col '>
-                        <div className=' bg-gray-200 md:w-5/12 w-full relative md:px-0 px-10 flex justify-center video_border overflow-hidden'>
-                            {/* <img src={phone} alt="" className='absolute bottom-0  md:h-[650px] h-[350px]' />/ */}
-                            <video src={video} autoPlay className="md:h-[500px] h-[350px]  bottom-0" ></video>
+                        <div className=' bg-gray-200 max-w-[310px] h-[625px] relative md:px-0 flex justify-center video_border overflow-hidden'>
+                            <div className="w-full h-full ">
+                                <video src={video} autoPlay loop className="" ></video>
+                            </div>
                         </div>
-                        <div className='md:w-7/12 w-full flex items-center justify-center bg-gray-200'>
+                        <div className='md:w-8/12 w-full flex items-center justify-center bg-gray-200'>
                             <div class="w-full h-full bg-white text-black md:px-6 px-2 rounded-bl-3xl flex flex-col  py-3">
                                 <div class="flex items-center mb-4">
                                     {/* <!-- Bu yerga sizning logotipingizning tasvirini qo'ying --> */}

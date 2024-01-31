@@ -5,7 +5,7 @@ const LocationSidebar = () => {
   
   return (
     <>
-      <div className="loc-sidebar-main w-full min-h-screen p-10">
+      <div className="loc-sidebar-main w-full md:min-h-screen p-10">
         <div className="flex justify-between items-start">
           <p className="font-bold text-[1.2rem] tracking-wide">Where to?</p>
           <p

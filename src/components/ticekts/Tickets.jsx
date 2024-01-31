@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import Card from "./components/Card";
 import AboutFirst from "./components/AboutFirst";
 import Information from "./components/Information";
@@ -11,32 +10,31 @@ import Bus from "./components/Bus";
 
 function Tickets() {
   return (
-    <div className="about-main">
-        <div className="pt-10 ">
-            <AboutFirst/>
-        </div>
-     
+    <div className="w-full">
+      <div className="pt-10 ">
+        <AboutFirst />
+      </div>
+      <div className="w-full flex flex-col items-center">
         <div className="mt-20">
-            <Information/>
+          <Information />
         </div>
-       <div className="mt-20 ">
-          <Card/>
-       </div>
-       <div className="mt-20">
-         <Pur/>
-       </div>
-       <div className="mt-12">
-        <MobileCard/>
-       </div>
-       <div className="mt-12">
-        <Text/>
+        <div className="mt-20 ">
+          <Card />
+        </div>
+        <div className="mt-20">
+          <Pur />
+        </div>
+        <div className="mt-12">
+          <MobileCard />
+        </div>
+        <div className="mt-12">
+          <Text />
+        </div>
+        <div className="mt-20">
+          <Bus />
+        </div>
       </div>
-      <div className="mt-20">
-        <Bus/>
-      </div>
-
     </div>
-
   );
 }
 export default Tickets;

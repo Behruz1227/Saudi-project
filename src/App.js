@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Tickets from './components/ticekts/Tickets';
@@ -7,9 +7,15 @@ import Contactus from './components/contact/contactUs';
 import QuestionsOne from './components/question/QuestionsOne';
 import Navbars from './components/navbar/Navbars';
 import Location from './components/location/Location';
-// import Navbar from './components/navbar';
+import { useEffect } from 'react';
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Navbars />
@@ -17,10 +23,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/plan' element={<Location />} />
-        {/* <Route path='/navbar' element={<Navbar />} /> */}
         <Route path='/routerr' element={<Routerr />} />
         <Route path='/contactUs' element={<Contactus />} />
-        {/* <Route path='/tickets' element={<Tickets />} /> */}
         <Route path='/tickets' element={<Tickets />} />
         <Route path='/question' element={<QuestionsOne />} />
       </Routes>

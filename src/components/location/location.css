@@ -1,0 +1,10 @@
+.location-main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loc-sidebar-main {
+    background-color: #F2FDF5;
+    border: 1px solid #cff1d9;
+}

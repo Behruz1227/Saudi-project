@@ -49,7 +49,7 @@ const YandexMaps = () => {
     const placemarkStyle = { iconColor: '#ff0000', };
 
     return (
-        <div className="w-full min-h-screen overflow-hidden relative">
+        <div className="w-full min-h-screen relative">
             <YMaps query={{ apikey: '28c3f859-1fa2-4b41-9df4-e371053dc79e' }}>
                 <Map
                     defaultState={{ center: locate, zoom: zoom }}

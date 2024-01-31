@@ -7,9 +7,11 @@ import Pur from "./components/Pur";
 import MobileCard from "./components/MobileCard";
 import Text from "./components/Text";
 import Bus from "./components/Bus";
+import Footer from "../footer/Footer";
 
 function Tickets() {
   return (
+    <>
     <div className="w-full px-10">
       <div className="pt-10 ">
         <AboutFirst />
@@ -27,14 +29,18 @@ function Tickets() {
         <div className="mt-12">
           <MobileCard />
         </div>
-      </div>
         <div className="mt-12">
           <Text />
         </div>
         <div className="mt-20">
           <Bus />
         </div>
+      </div>
     </div>
+      <div className="mt-5">
+        <Footer/>
+      </div>
+    </>
   );
 }
 export default Tickets;

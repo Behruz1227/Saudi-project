@@ -11,13 +11,13 @@
     .purText{
         /* position: flex; */
         font-size: 16px;
-        width: 110%;
+        width: 100%;
         height: 20px;  
     }
     .mobileCard{
        
-        width: full;
-        height: 600px;
+        /* width: full; */
+        /* height: 600px; */
         justify-content: center;
     }
     .buyText{
@@ -48,7 +48,7 @@
         top: 2350px;
     }
     .rounded {
-        position: flex;
+        /* position: flex; */
         width: 200px;
         
     }

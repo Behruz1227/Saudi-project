@@ -8,7 +8,6 @@ import QuestionsOne from './components/question/QuestionsOne';
 import Navbars from './components/navbar/Navbars';
 import Location from './components/location/Location';
 import { useEffect } from 'react';
-// import Navbar from './components/navbar';
 
 function App() {
   const { pathname } = useLocation();
@@ -16,7 +15,7 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-  
+
   return (
     <>
       <Navbars />
@@ -24,10 +23,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/plan' element={<Location />} />
-        {/* <Route path='/navbar' element={<Navbar />} /> */}
         <Route path='/routerr' element={<Routerr />} />
         <Route path='/contactUs' element={<Contactus />} />
-        {/* <Route path='/tickets' element={<Tickets />} /> */}
         <Route path='/tickets' element={<Tickets />} />
         <Route path='/question' element={<QuestionsOne />} />
       </Routes>

@@ -105,44 +105,43 @@ const Navbars = () => {
             </div>
 
             {/* mobile nav */}
-            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg text-center rounded-xl overflow-hidden' : 'hidden'}`}>
+            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg rounded-xl overflow-hidden md:hidden' : 'hidden'}`}>
                 <ul
-                    className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
-                        bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
-                        md:bg-white">
-                    <li>
+                    className="w-full font-medium p-4 mt-4 border border-gray-100 rounded-lg
+                        bg-gray-50 rtl:space-x-reverse">
+                    <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
                             to="/plan"
-                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Plan</Link>
                     </li>
-                    <li>
+                    <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
                             to="/routerr"
-                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Routes</Link>
                     </li>
-                    <li>
+                    <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
                             to="/tickets"
-                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Tickets</Link>
                     </li>
-                    <li>
+                    <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
                             to="/about"
-                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">About</Link>
                     </li>
-                    <li>
+                    <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
                             to="/contactUs"
-                            className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Contact</Link>
                     </li>
                 </ul>

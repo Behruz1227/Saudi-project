@@ -3,8 +3,8 @@ import { frame } from "../../../assets"
 
 function Card(){
     return(
-        <div className="flex justify-center gap-4 md: w-full sm:w-full">
-        <div className="flex  justify-center px-4 gap-20">
+        <div className="  flex justify-center gap-4:w-full">
+        <div className="flex  justify-center px-4 gap-20 cradTicekt">
           <div class=" bg-white rounded-xl flex p-10">
             <div class="flex flex-col items-center">
                 <img src={frame} alt="" srcset="" />

@@ -67,7 +67,7 @@ const Navbars = () => {
                         bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         <li>
                             <Link
-                                to="/"
+                                to="/plan"
                                 className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
                                 px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
                                 focus:text-yellow-400 focus:font-semibold duration-200">Plan</Link>
@@ -105,7 +105,7 @@ const Navbars = () => {
             </div>
 
             {/* mobile nav */}
-            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg text-center' : 'hidden'}`}>
+            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg text-center rounded-xl overflow-hidden' : 'hidden'}`}>
                 <ul
                     className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
                         bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
@@ -113,7 +113,7 @@ const Navbars = () => {
                     <li>
                         <Link
                             onClick={openMenu}
-                            to="/"
+                            to="/plan"
                             className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Plan</Link>
                     </li>

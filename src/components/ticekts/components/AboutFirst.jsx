@@ -1,12 +1,12 @@
 import { chipta } from "../../../assets"
+import "../../../index.css"
 
 function AboutFirst(){
     return(
-    <div className={`flex justify-center items-center w-full  rounded-3xl`}>
-    <div className='about-one-page1 w-1200   h-[75vh] '>
-      <img src={chipta} alt="img" className='w-1200 lg:w-full md:w-300 h-full object-cover relative rounded-3xl' />
-    
-       
+    <div className={`flex justify-center items-center rounded-3xl overflow-hidden `}>
+    <div className='max-w-[1450px] h-[40vh] rounded-3xl lg:h-[75vh] sm:h-[50vh] md:h-[60vh] w-full tikketOnePage-main'>
+      {/* <img src={chipta} alt="img" className='about-one-page duration-200 w-full h-full rounded-3xl 
+          object-cover object-right sm:object-right xl:object-cover shadow-xl' />    */}
     </div>
   </div>
     )

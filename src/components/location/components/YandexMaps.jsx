@@ -10,28 +10,35 @@ const YandexMaps = () => {
     const handleZoomChange = (e) => setZoom(e.get('newZoom'))
 
     // turgan manzilni olish
-    const myLocationClick = () => {
-        if (1) {
-            navigator.geolocation.getCurrentPosition(position => {
-                // console.log(position.coords.latitude);
-                // console.log(position.coords.longitude);
-                let lat = position.coords.latitude
-                let long = position.coords.longitude
-                setLocate([lat, long]);
-            })
+    const getMyLocation = () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    setLocate([latitude, longitude]);
+                    setZoom(10);
+                },
+                (error) => {
+                    console.error('Geolocation error:', error.message);
+                }
+            );
+        } else {
+            console.error('Geolocation is not supported by this browser.');
         }
-    }
+    };
 
     // click bulganda location olish
     const locationClick = (e) => {
         const coords = e.get('coords')
         setLocate(coords);
-        // console.log(coords);
+        // console.log(coords[0], coords[1]);
         const geoCodeUrl = `https://geocode-maps.yandex.ru/1.x/?format=json&apikey=${apiKey}&geocode=${coords[1]},${coords[0]}`;
 
         fetch(geoCodeUrl)
             .then(response => response.json())
             .then(data => {
+                // aniq manzilni olish uchun
                 const address = data.response.GeoObjectCollection.featureMember[0]
                     .GeoObject.metaDataProperty.GeocoderMetaData.text;
             })
@@ -56,7 +63,7 @@ const YandexMaps = () => {
                 </Map>
             </YMaps>
             <button
-                onClick={myLocationClick}
+                onClick={getMyLocation}
                 className='absolute right-1 bottom-80 text-green-400 border-2 shadow-lg 
                 active:bg-green-500 active:text-white hover:text-green-600 duration-200 bg-white 
                 rounded-full w-10 h-10'>

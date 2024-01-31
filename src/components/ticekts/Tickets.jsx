@@ -10,7 +10,7 @@ import Bus from "./components/Bus";
 
 function Tickets() {
   return (
-    <div className="w-full">
+    <div className="w-full px-10">
       <div className="pt-10 ">
         <AboutFirst />
       </div>

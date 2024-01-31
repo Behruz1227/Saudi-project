@@ -10,7 +10,7 @@ import {
 
 function MobileCard() {
   return (
-    <div className="justify-center px-20 my-8 mobileCard">
+    <div className="justify-center my-8 mobileCard">
       <div className="container w-full px-4 py-3 md:w-full flex flex-col lg:flex-row justify-around items-center bg-green-950 rounded-3xl mt-4 mobileCard">
         <div className="rounded ">
           <img src={round} alt="" className="" />
@@ -33,7 +33,7 @@ function MobileCard() {
           <img src={mobile} alt="" />
         </div>
       </div>
-      <div className="container w-full mt-10 py-6 flex flex-col items-center justify-center bg-lime-500 rounded-3xl pt-10 ">
+      <div className="container w-full mt-10 py-6 flex flex-col lg:flex-row gap-8 px-5 items-center justify-center bg-lime-500 rounded-3xl pt-10 ">
         <div className="rounded">
           <img src={card1} alt="" />
         </div>
@@ -52,7 +52,7 @@ function MobileCard() {
           <img src={card} alt="" />
         </div>
       </div>
-      <div className="container w-full mt-20 py-6 flex flex-col justify-center bg-white-500 rounded-3xl  ">
+      <div className="container w-full mt-20 py-6 flex flex-col lg:flex-row items-center gap-8 px-5 justify-center  bg-white-500 rounded-3xl  ">
         <div className="rounded  ">
           <img src={group3} alt="" />
         </div>

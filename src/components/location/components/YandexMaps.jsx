@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { Map, Placemark, YMaps, ZoomControl } from "react-yandex-maps";
+import {
+    Map,
+    Placemark,
+    YMaps,
+    ZoomControl,
+    FullscreenControl,
+    RoutePanel,
+} from "react-yandex-maps";
 
 const YandexMaps = () => {
     const [locate, setLocate] = useState([38.841605, 65.789979])
@@ -57,11 +64,25 @@ const YandexMaps = () => {
                     height='100vh'
                     onBoundsChange={handleZoomChange}
                     onClick={locationClick}
+                    modules={['control.ZoomControl', 'control.FullscreenControl']}
                 >
                     <Placemark geometry={locate} options={placemarkStyle} />
                     <ZoomControl options={{ float: 'right', position: { bottom: 100, right: 10, } }} />
+                    <FullscreenControl options={{ float: 'right', position: { top: 50, right: 10 } }} />
+                    <RoutePanel
+                        options={{
+                            allowSwitch: false,
+                            reverseGeocoding: true,
+                            types: {
+                                auto: true,
+                                masstransit: true,
+                                pedestrian: true
+                            }
+                        }}
+                    />
                 </Map>
             </YMaps>
+            
             <button
                 onClick={getMyLocation}
                 className='absolute right-1 bottom-80 text-green-400 border-2 shadow-lg 

@@ -27,13 +27,13 @@ function Tickets() {
         <div className="mt-12">
           <MobileCard />
         </div>
+      </div>
         <div className="mt-12">
           <Text />
         </div>
         <div className="mt-20">
           <Bus />
         </div>
-      </div>
     </div>
   );
 }

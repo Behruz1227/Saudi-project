@@ -3,6 +3,9 @@ import vektor from "../../../assets/home-page/Vector.png"
 import phone from "../../../assets/home-page/phone.png"
 import logosecond from "../../../assets/home-page/logosecond.png"
 import video from "../../../assets/home-page/video/riyadhbusvideo.mp4"
+import iosApp from "../../../assets/home-page/ios-app.png"
+import androidApp from "../../../assets/home-page/android-app.png"
+import "../style.css"
 
 
 function MobilApp() {
@@ -11,8 +14,8 @@ function MobilApp() {
         <div className='w-full py-20  h-max'>
             <div className='relative h-[300px]'>
                 <div className='w-full md:px-40 important  z-10 absolute'>
-                    <div className="rounded-xl text-black p-4 border ">
-                        <div className="container mx-auto flex lg:flex-row  justify-between items-center ">
+                    <div className="rounded-xl text-black p-4 border global-bg">
+                        <div className="container mx-auto  flex lg:flex-row  justify-between items-center ">
                             <div className="flex items-center">
                                 {/* Logo va boshqa tarkib uchun joy */}
                                 <img src={logo} alt="Logo" className="mr-4" />
@@ -49,44 +52,34 @@ function MobilApp() {
                 </div>
             </div>
 
-            <div className='w-full h-max md:pt-44 -mt-48 flex lg:flex-row flex-col-reverse'>
-                <div className='lg:w-[40vw] w-full h-[600] flex flex-col items-center relative'>
+            <div className='w-full h-max md:pt-44 md:mt-0 -mt-48 flex lg:flex-row flex-col-reverse'>
+                <div className='lg:w-[40vw] w-full h-[600] md:block hidden  flex-col items-center relative'>
                     <div className='w-full h-[300px] flex items-center bg-gray-200'>
                         <div><img src={vektor} alt="" className='h-[300px]' /></div>
                         <div><h1 className='px-10'>New look, more routes, more stations.</h1></div>
                     </div>
                     <div className='w-full h-[300px] md:block hidden bg-gray-200'>
-                        <div className='bg-white w-full h-[300px] rounded-tr-3xl'></div>
+                        <div className='global-bg w-full h-[300px] rounded-tr-3xl'></div>
                     </div>
                 </div>
 
                 <div className='lg:w-[60vw] w-full md:h-[600px] h-max flex flex-col'>
-                    <div className='w-full md:h-[300px] h-max flex md:items-end items-center md:flex-row flex-col '>
-                        <div className=' bg-gray-200 max-w-[310px] h-[625px] relative md:px-0 flex justify-center video_border overflow-hidden'>
+                    <div className='md:bg-gray-200 w-full md:h-[300px] h-max flex md:items-end items-center md:flex-row flex-col '>
+                        <div className='max-w-[310px] h-[625px] relative md:px-0 flex justify-center video_border overflow-hidden'>
                             <div className="w-full h-full ">
                                 <video src={video} autoPlay loop className="" ></video>
                             </div>
                         </div>
-                        <div className='md:w-8/12 w-full flex items-center justify-center bg-gray-200'>
-                            <div class="w-full h-full bg-white text-black md:px-6 px-2 rounded-bl-3xl flex flex-col  py-3">
+                        <div className='md:w-8/12 w-full h-[300px] flex items-center justify-center bg-gray-200'>
+                            <div class="w-full h-full global-bg text-black md:px-6 px-2 rounded-bl-3xl flex flex-col justify-center py-3">
                                 <div class="flex items-center mb-4">
                                     {/* <!-- Bu yerga sizning logotipingizning tasvirini qo'ying --> */}
                                     <img src={logosecond} alt="Riyadh Bus Logo" class="w-12 h-12 mr-3 " />
                                 </div>
                                 <p class="text-lg mb-4 md:w-32 w-full">Download the Riyadh Bus app today.</p>
                                 <div class="flex mt-2">
-                                    <button className='flex justify-center items-center border md:px-3 px-1 py-2 rounded-2xl mr-2 bg-black text-white'>
-                                        <i class="fa-brands fa-apple text-3xl mr-2 "></i>
-                                        <div className='text-start'>
-                                            <p>download on the </p><span className='md:text-lg mt-0'>App story </span><p />
-                                        </div>
-                                    </button>
-                                    <button className='flex justify-center items-center border md:px-3 px-1 py-2 rounded-2xl bg-black text-white'>
-                                        <i class="fa-brands fa-google-play mr-2 text-2xl"></i>
-                                        <div className='text-start'>
-                                            <p>get on the <br /> <span className='md:text-lg'>Google play</span></p>
-                                        </div>
-                                    </button>
+                                   <img src={iosApp} alt="" className="w-36 mr-5"/>
+                                   <img src={androidApp} alt="" className="w-36" />
                                 </div>
                             </div>
                         </div>

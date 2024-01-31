@@ -14,8 +14,11 @@
 }
 .plan-trip {
     background-image: url('../../assets/home-page/karta.png');
-    /* background-position: left center; */
+    background-position: center;
 }
 .video_border {
     border-radius: 55px;
+}
+.global-bg {
+    background-color: #f0f0f0;
 }

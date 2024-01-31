@@ -2,6 +2,7 @@ import logo from "../../../assets/home-page/logo.png"
 import vektor from "../../../assets/home-page/Vector.png"
 import phone from "../../../assets/home-page/phone.png"
 import logosecond from "../../../assets/home-page/logosecond.png"
+import video from "../../../assets/home-page/video/riyadhbusvideo.mp4"
 
 
 function MobilApp() {
@@ -9,7 +10,7 @@ function MobilApp() {
     return (
         <div className='w-full py-20  h-max'>
             <div className='relative h-[300px]'>
-                <div className='w-full md:px-40 important bg-white z-10 absolute'>
+                <div className='w-full md:px-40 important  z-10 absolute'>
                     <div className="rounded-xl text-black p-4 border ">
                         <div className="container mx-auto flex lg:flex-row  justify-between items-center ">
                             <div className="flex items-center">
@@ -38,7 +39,6 @@ function MobilApp() {
                                         <i className="fas fa-chevron-down"></i> {/* Dropdown ikonkasi */}
                                     </button>
                                     {/* Dropdown menyusi */}
-
                                 </div>
                             </div>
                         </div>
@@ -62,8 +62,9 @@ function MobilApp() {
 
                 <div className='lg:w-8/12 w-full md:h-[600px] h-max flex flex-col'>
                     <div className='w-full md:h-[300px] h-max flex md:items-end items-center md:flex-row flex-col '>
-                        <div className=' bg-gray-200 md:w-5/12 w-full relative md:px-0 px-10 flex justify-center'>
-                            <img src={phone} alt="" className='absolute bottom-0  md:h-[650px] h-[350px]' />
+                        <div className=' bg-gray-200 md:w-5/12 w-full relative md:px-0 px-10 flex justify-center video_border overflow-hidden'>
+                            {/* <img src={phone} alt="" className='absolute bottom-0  md:h-[650px] h-[350px]' />/ */}
+                            <video src={video} autoPlay className="md:h-[500px] h-[350px]  bottom-0" ></video>
                         </div>
                         <div className='md:w-7/12 w-full flex items-center justify-center bg-gray-200'>
                             <div class="w-full h-full bg-white text-black md:px-6 px-2 rounded-bl-3xl flex flex-col  py-3">

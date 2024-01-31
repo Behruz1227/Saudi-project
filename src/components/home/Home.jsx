@@ -16,7 +16,9 @@ function Home() {
     <>
       <div className='w-full md:px-20 sm:px-5 px-0 lg:py-10 py-5'>
         <TripplanFirs />
-        <MobilApp />
+      </div>
+      <MobilApp />
+      <div className='w-full md:px-20 sm:px-5 px-0 lg:py-10 py-5'>
         <Tripplan />
       </div>
       <BusPlan />

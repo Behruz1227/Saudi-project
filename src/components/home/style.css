@@ -16,3 +16,6 @@
     background-image: url('../../assets/home-page/karta.png');
     /* background-position: left center; */
 }
+.video_border {
+    border-radius: 55px;
+}

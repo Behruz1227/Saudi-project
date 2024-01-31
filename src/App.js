@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Tickets from './components/ticekts/Tickets';
@@ -7,9 +7,16 @@ import Contactus from './components/contact/contactUs';
 import QuestionsOne from './components/question/QuestionsOne';
 import Navbars from './components/navbar/Navbars';
 import Location from './components/location/Location';
+import { useEffect } from 'react';
 // import Navbar from './components/navbar';
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   return (
     <>
       <Navbars />

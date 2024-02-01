@@ -5,7 +5,7 @@ import {
     YMaps,
     ZoomControl,
     FullscreenControl,
-    RoutePanel,
+    RouteButton,
 } from "react-yandex-maps";
 
 const YandexMaps = () => {
@@ -72,26 +72,27 @@ const YandexMaps = () => {
                     />
                     <ZoomControl
                         options={{
-                            float: 'right',
                             position: {
-                                bottom: 100,
+                                bottom: 90,
                                 right: 10,
                             }
                         }}
                     />
                     <FullscreenControl
                         options={{
-                            float: 'right',
                             position: {
-                                top: 50,
+                                bottom: 310,
                                 right: 10,
                             }
                         }}
                     />
-                    <RoutePanel
+                    <RouteButton
                         options={{
-                            allowSwitch: false,
-                            reverseGeocoding: true,
+                            position: {
+                                top: 30,
+                                right: 10,
+                            },
+                            selectOnClick: false,
                             types: {
                                 auto: true, // Avtomobil yo'nalishi
                                 masstransit: true, // Transport yo'nalishi
@@ -109,7 +110,7 @@ const YandexMaps = () => {
 
             <button
                 onClick={getMyLocation}
-                className='absolute right-1 bottom-80 text-green-400 border-2 shadow-lg 
+                className='absolute right-1 bottom-[22rem] text-green-400 border-2 shadow-lg 
                 active:bg-green-500 active:text-white hover:text-green-600 duration-200 bg-white 
                 rounded-full w-10 h-10'>
                 <i className="fa-solid fa-location-crosshairs"></i>

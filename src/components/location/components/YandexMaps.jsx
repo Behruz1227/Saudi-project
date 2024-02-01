@@ -9,8 +9,8 @@ import {
 } from "react-yandex-maps";
 
 const YandexMaps = () => {
-    const [locate, setLocate] = useState([38.841605, 65.789979])
-    const [zoom, setZoom] = useState(10)
+    const [locate, setLocate] = useState([38.841605, 65.789979]);
+    const [zoom, setZoom] = useState(10);
     const apiKey = '28c3f859-1fa2-4b41-9df4-e371053dc79e';
 
     // zoom ni uzgartirish
@@ -66,23 +66,47 @@ const YandexMaps = () => {
                     onClick={locationClick}
                     modules={['control.ZoomControl', 'control.FullscreenControl']}
                 >
-                    <Placemark geometry={locate} options={placemarkStyle} />
-                    <ZoomControl options={{ float: 'right', position: { bottom: 100, right: 10, } }} />
-                    <FullscreenControl options={{ float: 'right', position: { top: 50, right: 10 } }} />
+                    <Placemark
+                        geometry={locate}
+                        options={placemarkStyle}
+                    />
+                    <ZoomControl
+                        options={{
+                            float: 'right',
+                            position: {
+                                bottom: 100,
+                                right: 10,
+                            }
+                        }}
+                    />
+                    <FullscreenControl
+                        options={{
+                            float: 'right',
+                            position: {
+                                top: 50,
+                                right: 10,
+                            }
+                        }}
+                    />
                     <RoutePanel
                         options={{
                             allowSwitch: false,
                             reverseGeocoding: true,
                             types: {
-                                auto: true,
-                                masstransit: true,
-                                pedestrian: true
+                                auto: true, // Avtomobil yo'nalishi
+                                masstransit: true, // Transport yo'nalishi
+                                pedestrian: true, // Piyoda yo'nalishi
+                                bicycle: true, // Velosiped yo'nalishi
+                                taxi: true, // Taksi yo'nalishi
+                                multiroute: true, // Ko'p yo'nalishli yo'nalish
+                                masstransitSuburban: true, // Transport yo'nalishi (shahar tashqarisida)
+                                masstransitCity: true, // Transport yo'nalishi (shahar ichida)
                             }
                         }}
                     />
                 </Map>
             </YMaps>
-            
+
             <button
                 onClick={getMyLocation}
                 className='absolute right-1 bottom-80 text-green-400 border-2 shadow-lg 

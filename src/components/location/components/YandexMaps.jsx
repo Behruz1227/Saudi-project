@@ -6,15 +6,20 @@ import {
     ZoomControl,
     FullscreenControl,
     RouteButton,
+    RouteEditor,
 } from "react-yandex-maps";
 
 const YandexMaps = () => {
     const [locate, setLocate] = useState([38.841605, 65.789979]);
     const [zoom, setZoom] = useState(10);
+    const [addressLoc, setAddressLoc] = useState();
+    const [isHovered, setHovered] = useState(false);
     const apiKey = '28c3f859-1fa2-4b41-9df4-e371053dc79e';
 
     // zoom ni uzgartirish
     const handleZoomChange = (e) => setZoom(e.get('newZoom'))
+    const handleMouseEnter = () => setHovered(true)
+    const handleMouseLeave = () => setHovered(false)
 
     // turgan manzilni olish
     const getMyLocation = () => {
@@ -39,21 +44,15 @@ const YandexMaps = () => {
     const locationClick = (e) => {
         const coords = e.get('coords')
         setLocate(coords);
-        // console.log(coords[0], coords[1]);
         const geoCodeUrl = `https://geocode-maps.yandex.ru/1.x/?format=json&apikey=${apiKey}&geocode=${coords[1]},${coords[0]}`;
 
         fetch(geoCodeUrl)
             .then(response => response.json())
-            .then(data => {
-                // aniq manzilni olish uchun
-                const address = data.response.GeoObjectCollection.featureMember[0]
-                    .GeoObject.metaDataProperty.GeocoderMetaData.text;
-            })
-            .catch(error => console.error('Xatolik yuz berdi:', error));
+            .then(data => setAddressLoc(data.response.GeoObjectCollection.featureMember[0].GeoObject.metaDataProperty.GeocoderMetaData.text))
+            .catch(() => console.error('Xatolik yuz berdi!'));
     }
 
-    // color red qilish uchun ishlatilgan
-    const placemarkStyle = { iconColor: '#ff0000', };
+    const placemarkOptions = { iconColor: isHovered ? 'red' : 'blue', preset: 'islands#circleDotIcon', };
 
     return (
         <div className="w-full min-h-screen relative">
@@ -68,30 +67,22 @@ const YandexMaps = () => {
                 >
                     <Placemark
                         geometry={locate}
-                        options={placemarkStyle}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        properties={{ balloonContent: addressLoc, }}
+                        options={placemarkOptions}
+                        modules={['geoObject.addon.balloon']}
                     />
                     <ZoomControl
-                        options={{
-                            position: {
-                                bottom: 90,
-                                right: 10,
-                            }
-                        }}
+                        options={{ position: { bottom: 90, right: 10, } }}
                     />
                     <FullscreenControl
-                        options={{
-                            position: {
-                                bottom: 310,
-                                right: 10,
-                            }
-                        }}
+                        data={{ title: 'Full screen map' }}
+                        options={{ position: { bottom: 310, right: 10, } }}
                     />
                     <RouteButton
                         options={{
-                            position: {
-                                top: 30,
-                                right: 10,
-                            },
+                            position: { top: 30, right: 10, },
                             selectOnClick: false,
                             types: {
                                 auto: true, // Avtomobil yo'nalishi
@@ -105,14 +96,26 @@ const YandexMaps = () => {
                             }
                         }}
                     />
+                    <RouteEditor
+                        options={{
+                            position: { top: 30, right: 90 },
+                            editWayPoints: true, // Yo'lning boshlanish joyidan boshlab chizishni ruxsat etish
+                            editViaPoints: true, // Yo'l segmentlarini tahrirlashni ruxsat etish
+                            editSegmentControl: true, // Yo'l turini o'zgartirishni ruxsat etish
+                            addWayPoints: true, // Yo'l yaratish vaqtida yangi joylarni qo'shishni ruxsat etish
+                            dragWayPoints: true, // Yo'lning boshlanish va tugash joylarini o'zgartirishni ruxsat etish
+                            reverseWayPoints: true, // Yo'lning harakatini boshqarishni ruxsat etish
+                            reverseViaPoints: true, // Yo'l qadamini birinchi qadamga qaytarishni ruxsat etish
+                            showInfoInBalloon: true, // Harakat qilayotganda yo'lga ma'lumot olishni ruxsat etish
+                            zIndex: 1000, // Yo'lning bosish va tugash joylari bilan asosiy chiziqni yo'q qilish                            
+                        }}
+                    />
                 </Map>
             </YMaps>
-
             <button
                 onClick={getMyLocation}
-                className='absolute right-1 bottom-[22rem] text-green-400 border-2 shadow-lg 
-                active:bg-green-500 active:text-white hover:text-green-600 duration-200 bg-white 
-                rounded-full w-10 h-10'>
+                className='absolute right-1 bottom-[22rem] text-green-400 border-2 shadow-lg active:bg-green-500 
+                active:text-white hover:text-green-600 duration-200 bg-white rounded-full w-10 h-10'>
                 <i className="fa-solid fa-location-crosshairs"></i>
             </button>
         </div>

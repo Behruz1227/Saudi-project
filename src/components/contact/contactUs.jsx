@@ -21,7 +21,7 @@ const Contactus = () => {
           <ContactForm />
         </div>
       </div>
-      <Footer/>
+      <Footer />
 
     </>
 

@@ -2,6 +2,11 @@ import React from 'react'
 import { answer, call, message } from '../../assets'
 
 const ContactForm = () => {
+
+  // add contact message
+  const addContactMessage = () => { 
+    
+  }
   return (
     <div className='flex contaktform gap-7'>
       <div className='my-3 contactForm'>
@@ -12,7 +17,7 @@ const ContactForm = () => {
           <textarea className='contactTextarea' placeholder='Type your message here' rows={14} cols={78} />
         </div>
         <button className='sendBtn bg-[#6FD44F] w-[15rem] py-5 rounded-[2rem] font-semibold mt-5'>
-            Send message
+          Send message
         </button>
       </div>
       <div className='contactAfisha'>

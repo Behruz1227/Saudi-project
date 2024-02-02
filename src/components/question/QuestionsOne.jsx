@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { bus, kvadrat } from "../../assets";
 import busVedio from "../../assets/vedio-bus.mp4";
 import Accordion from "./accardion";
+import axios from "axios";
+import { url } from "../api";
 
 function QuestionsOne() {
+    const [faq, setFaq] = useState([]);
 
+    const getFaq = () => {
+        axios.get(`${url}`)
+    }
 
     return (
         <>

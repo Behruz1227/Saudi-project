@@ -41,15 +41,15 @@ const Footer = () => {
                 </div>
                 <div className="w-3/5 pl-10 footer-main-box2">
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">About Riyadh Bus</p>
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">Explore Routes</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200"><Link to='/about'>About Riyadh Bus</Link></p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right"><Link to='/routes'>Explore Routes</Link></p>
                     </div>
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">Tickets & fares</p>
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">PLAN YOUR TRIP</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200"><Link to='/tickets'>Tickets & fares</Link></p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right"><Link to='/plan'>PLAN YOUR TRIP</Link></p>
                     </div>
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">contact us</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200"><Link to='/contact'>Contact Us</Link></p>
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right"><Link to='/question'>FAQs</Link></p>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import Tripplan from './tripplan'
 import BusPlan from './busplan'
 import MaterSafety from './safityMatter'
 import Galery from './gallery'
+import Footer from '../footer/Footer'
 
 function Home() {
 
@@ -24,6 +25,9 @@ function Home() {
       <BusPlan />
       <MaterSafety />
       <Galery />
+      <div className='mt-20'>
+        <Footer />
+      </div>
     </>
   )
 }

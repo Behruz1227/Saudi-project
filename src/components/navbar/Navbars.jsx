@@ -74,7 +74,7 @@ const Navbars = () => {
                         </li>
                         <li>
                             <Link
-                                to="/routerr"
+                                to="/routes"
                                 className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
                                 px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
                                 focus:text-yellow-400 focus:font-semibold duration-200">Routes</Link>
@@ -95,7 +95,7 @@ const Navbars = () => {
                         </li>
                         <li>
                             <Link
-                                to="/contactUs"
+                                to="/contact"
                                 className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
                                 px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
                                 focus:text-yellow-400 focus:font-semibold duration-200">Contact</Link>
@@ -119,7 +119,7 @@ const Navbars = () => {
                     <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
-                            to="/routerr"
+                            to="/routes"
                             className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Routes</Link>
                     </li>
@@ -140,7 +140,7 @@ const Navbars = () => {
                     <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}
-                            to="/contactUs"
+                            to="/contact"
                             className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 
                             md:hover:bg-transparent md:hover:text-blue-700">Contact</Link>
                     </li>

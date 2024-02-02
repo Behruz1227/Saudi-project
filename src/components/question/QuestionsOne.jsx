@@ -23,7 +23,7 @@ function QuestionsOne() {
             <div className="w-full flex justify-between items-start mt-20">
                 <div className="flex justify-between">
                     <div>
-                        <img className="mt-14 w-48 hidden md:inline" src={kvadrat} alt="img" />
+                        <img className="mt-[4rem] w-48 hidden md:inline" src={kvadrat} alt="img" />
                     </div>
                     <div className="w-full pl-6 pr-6 md:pr-[13.5rem]">
                         <p
@@ -31,7 +31,7 @@ function QuestionsOne() {
                             style={{ color: "#00CF00" }}>
                             FREQUENTLY ASK QUESTIONS
                         </p>
-                        <h1 className="mt-5 text-[2rem] sm:text-[2.5rem] lg:text-[3rem] font-bold tracking-wide heading-tags-color w-full">
+                        <h1 className="mt-6 text-[2rem] sm:text-[2.5rem] lg:text-[3rem] font-bold tracking-wide heading-tags-color w-full">
                             Have a question?
                         </h1>
                         <hr className="w-full h-[2px] text-gray-900 my-10" />

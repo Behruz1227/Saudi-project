@@ -1,0 +1,17 @@
+.accordion {
+    border: 1px solid #e2e8f0;
+    margin-bottom: 8px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7fafc;
+}
+
+.accordion-content {
+    background-color: #edf2f7;
+    overflow: hidden;
+}

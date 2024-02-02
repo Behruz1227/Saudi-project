@@ -12,6 +12,7 @@ import {
     googleButton,
     footerBottom,
 } from "./footer-img/index";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -49,7 +50,7 @@ const Footer = () => {
                     </div>
                     <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
                         <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200">contact us</p>
-                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right">FAQs</p>
+                        <p className="w-1/2 text-[1rem] tracking-widest hover:cursor-pointer hover:text-red-600 duration-200 text-right"><Link to='/question'>FAQs</Link></p>
                     </div>
                 </div>
             </div>

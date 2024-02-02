@@ -4,6 +4,7 @@ import busVedio from "../../assets/vedio-bus.mp4";
 import Accordion from "./accardion";
 import axios from "axios";
 import { url } from "../api";
+import Footer from "../footer/Footer";
 
 function QuestionsOne() {
     const [faq, setFaq] = useState([]);
@@ -56,6 +57,7 @@ function QuestionsOne() {
                     </div>
                 </div>
             </div>
+            <div className="mt-20"><Footer /></div>
         </>
     );
 }

@@ -19,9 +19,11 @@ const Accordion = ({ title, content }) => {
                 <h2 className="text-lg font-semibold">{title}</h2>
                 <span>{isOpen ? '▲' : '▼'}</span>
             </div>
-            <animated.div style={{ height, opacity }} className={`accordion-content ${isOpen ? 'px-4 py-3' : 'p-0'}`}>
-                {content}
-            </animated.div>
+            {content.map((item) => (
+                <animated.div style={{ height, opacity }} className={`accordion-content ${isOpen ? 'px-10 py-3' : 'p-0'}`}>
+                    {item}
+                </animated.div>
+            ))}
         </div>
     );
 };

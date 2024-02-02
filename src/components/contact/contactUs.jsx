@@ -1,7 +1,6 @@
 import { brandingElement } from '../about/components/imgs'
 import './contactForm.css'
 import ContactForm from './contactForm'
-import ContactRadio from './contactRadio'
 import Footer from '../footer/Footer'
 
 const Contactus = () => {
@@ -17,7 +16,6 @@ const Contactus = () => {
           <div className='contactLine h-[0.5px]  w-full bg-slate-400 mt-20 '>
           </div>
           <p className='font-normal tracking-tight my-5'>How we can help you?</p>
-          <ContactRadio />
           <ContactForm />
         </div>
       </div>

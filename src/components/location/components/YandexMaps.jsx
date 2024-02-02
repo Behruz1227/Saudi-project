@@ -7,6 +7,7 @@ import {
     FullscreenControl,
     RouteButton,
     RouteEditor,
+    SearchControl,
 } from "react-yandex-maps";
 
 const YandexMaps = () => {
@@ -109,6 +110,10 @@ const YandexMaps = () => {
                             showInfoInBalloon: true, // Harakat qilayotganda yo'lga ma'lumot olishni ruxsat etish
                             zIndex: 1000, // Yo'lning bosish va tugash joylari bilan asosiy chiziqni yo'q qilish                            
                         }}
+                    />
+                    <SearchControl
+                        options={{ position: { top: 30, left: 10 } }}
+                        state={{ expanded: true }}
                     />
                 </Map>
             </YMaps>

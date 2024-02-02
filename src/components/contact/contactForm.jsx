@@ -1,48 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { answer, call, message } from '../../assets'
+import { byId, url } from '../api';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
+  const [inputValue, setinputValue] = useState('');
+
+  const inputHanler = (e) => setinputValue(e.target.value);
 
   // add contact message
   const addContactMessage = () => {
-
+    let data = {
+      id: 0,
+      email: byId('email').value,
+      message: byId('message').value,
+      status: inputValue
+    }
+    axios.post(`${url}contact/add`, data, '')
+      .then(() => {
+        toast.success('Successfully saved!')
+        byId('email').value = ''
+        byId('message').value = ''
+        setinputValue('')
+      })
+      .catch(() => toast.error('Error saving contact'))
   }
+
   return (
     <>
       <input
+        onChange={inputHanler}
         type="radio"
         name='gander'
-        id="contact_1"
         value='feedback'
         className='cursor-pointer inputform mr-2'
       />
       <span className="mr-8">Feedback</span>
       <input
+        onChange={inputHanler}
         type="radio"
         name='gander'
-        id="contact_2"
         value='inquiry'
         className='cursor-pointer mr-2'
       />
       <span className="mr-8">Inquiry</span>
       <input
+        onChange={inputHanler}
         type="radio"
         name='gander'
-        id="contact_3"
         value='lostFound'
         className='cursor-pointer mr-2'
       />
       <span className="mr-8">Last&Found</span>
-      
+
       <div className='flex contaktform gap-7'>
         <div className='my-3 contactForm'>
           <div className='mb-3 contactForm1'>
-            <input type="text" placeholder='Email*' required className='InputForm' />
+            <input type="text" id='email' placeholder='Email*' required className='InputForm' />
           </div>
           <div className='contactForm2' >
-            <textarea className='contactTextarea' placeholder='Type your message here' rows={14} cols={78} />
+            <textarea className='contactTextarea' id='message' placeholder='Type your message here' rows={14} cols={78} />
           </div>
-          <button className='sendBtn bg-[#6FD44F] w-[15rem] py-5 rounded-[2rem] font-semibold mt-5'>
+          <button onClick={addContactMessage} className='sendBtn bg-[#6FD44F] w-[15rem] py-5 rounded-[2rem] font-semibold mt-5'>
             Send message
           </button>
         </div>

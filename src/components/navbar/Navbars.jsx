@@ -120,7 +120,7 @@ const Navbars = () => {
             </div>
 
             {/* mobile nav */}
-            <div className={`${isOpen ? 'inline absolute top-16 w-80 right-10 md:hidden mobile-nav' : 'hidden'}`}>
+            <div className={`${isOpen ? 'inline absolute top-16 w-80 right-10 md:hidden z-30 mobile-nav' : 'hidden'}`}>
                 <ul
                     className="w-full font-semibold p-4 mt-4 border border-gray-100 overflow-hidden shadow-lg 
                     rounded-3xl bg-gray-50 rtl:space-x-reverse tracking-wider font-mono text-[1.2rem]">

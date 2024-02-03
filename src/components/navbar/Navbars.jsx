@@ -1,16 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { logoimage } from "../../assets/index";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 const Navbars = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenDrop, setIsOpenDrop] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
 
     const openMenu = () => setIsOpen(!isOpen);
     const openDropDown = () => setIsOpenDrop(!isOpenDrop);
 
+    const handleScroll = () => {
+        if (window.scrollY > 100) setIsSticky(true)
+        else setIsSticky(false)
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, []);
+
     return (
-        <nav className="bg-white border-gray-200 sticky top-3 rounded-xl mx-3 shadow-lg z-50">
+        <nav
+            className={`${isSticky
+                ? 'sticky px-4 py-3 w-[70%] ml-[15%] shadow-lg rounded-3xl border border-green-500 bg-white'
+                : ''} py-2 z-50`}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={logoimage} className="h-8" alt="Logo" />
@@ -46,15 +61,15 @@ const Navbars = () => {
                         </ul>
                     </div>
 
-
                     <button
                         onClick={openMenu}
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 
-                        rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                        className="inline-flex items-center p-1 w-10 h-10 justify-center text-sm text-gray-500 
+                        rounded-2xl md:hidden focus:outline-none focus:border-2 focus:border-green-600">
                         <span className="sr-only">Open navbar menu</span>
-                        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
+                        {isOpen
+                            ? <i className="fa-solid fa-xmark scale-150"></i>
+                            : <i className="fa-solid fa-bars scale-150"></i>
+                        }
                     </button>
                 </div>
 
@@ -63,8 +78,8 @@ const Navbars = () => {
                     className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                     id="navbar-cta">
                     <ul
-                        className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg
-                        bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                        className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 
+                        rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 desktop-nav">
                         <li>
                             <Link
                                 to="/plan"
@@ -105,10 +120,10 @@ const Navbars = () => {
             </div>
 
             {/* mobile nav */}
-            <div className={`${isOpen ? 'inline absolute top-16 w-full shadow-lg rounded-xl overflow-hidden md:hidden' : 'hidden'}`}>
+            <div className={`${isOpen ? 'inline absolute top-16 w-80 right-10 md:hidden mobile-nav' : 'hidden'}`}>
                 <ul
-                    className="w-full font-medium p-4 mt-4 border border-gray-100 rounded-lg
-                        bg-gray-50 rtl:space-x-reverse">
+                    className="w-full font-semibold p-4 mt-4 border border-gray-100 overflow-hidden shadow-lg 
+                    rounded-3xl bg-gray-50 rtl:space-x-reverse tracking-wider font-mono text-[1.2rem]">
                     <li className="w-full flex justify-center items-start text-center">
                         <Link
                             onClick={openMenu}

@@ -1,0 +1,48 @@
+.sticky {
+    position: fixed;
+    top: 30px;
+    animation-name: navbar-sticky;
+    animation-timing-function: linear;
+    animation-duration: .4s;
+}
+
+@keyframes navbar-sticky {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sticky {
+        width: 86%;
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 900px) {
+    .sticky {
+        width: 92%;
+        margin-left: 4%;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+
+    .desktop-nav li a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .sticky {
+        position: static;
+    }
+
+    .mobile-nav {
+        width: 17rem;
+    }
+}

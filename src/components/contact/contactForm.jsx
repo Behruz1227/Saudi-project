@@ -27,32 +27,44 @@ const ContactForm = () => {
       .catch(() => toast.error('Error saving contact'))
   }
 
+  let style = {
+    checkbox: "flex items-center"
+  }
+
   return (
     <>
-      <input
-        onChange={inputHanler}
-        type="radio"
-        name='gander'
-        value='feedback'
-        className='cursor-pointer inputform mr-2'
-      />
-      <span className="mr-8">Feedback</span>
-      <input
-        onChange={inputHanler}
-        type="radio"
-        name='gander'
-        value='inquiry'
-        className='cursor-pointer mr-2'
-      />
-      <span className="mr-8">Inquiry</span>
-      <input
-        onChange={inputHanler}
-        type="radio"
-        name='gander'
-        value='lostFound'
-        className='cursor-pointer mr-2'
-      />
-      <span className="mr-8">Last&Found</span>
+      <div className='flex justify-start items-start'>
+        <div className={style.checkbox}>
+          <input
+            onChange={inputHanler}
+            type="radio"
+            name='gander'
+            value='feedback'
+            className='cursor-pointer w-5 h-5 inputform mr-2'
+          />
+          <span className="mr-8">Feedback</span>
+        </div>
+        <div className={style.checkbox}>
+          <input
+            onChange={inputHanler}
+            type="radio"
+            name='gander'
+            value='inquiry'
+            className='cursor-pointer w-5 h-5 mr-2'
+          />
+          <span className="mr-8">Inquiry</span>
+        </div>
+        <div className={style.checkbox}>
+          <input
+            onChange={inputHanler}
+            type="radio"
+            name='gander'
+            value='lostFound'
+            className='cursor-pointer w-5 h-5 mr-2'
+          />
+          <span className="mr-8">Last&Found</span>
+        </div>
+      </div>
 
       <div className='flex contaktform gap-7'>
         <div className='my-3 contactForm'>

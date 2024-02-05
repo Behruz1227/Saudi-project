@@ -25,8 +25,8 @@ function Card() {
     <div className="flex md:justify-around justify-center w-full flex-wrap lg:px-56">
       {/* Tashqi divlarni takrorlash o'rniga, tickets map qilinishi va har bir ticket uchun alohida card yaratilishi mumkin */}
       {tickets.slice(0,4).map((ticket, index) => (
-        <div key={index} className="flex justify-center  px-4 gap-5 cardTicket mt-5">
-          <div className="bg-white rounded-xl flex w-[300px] p-10 flex-col items-center">
+        <div key={index} className="flex justify-center px-4 gap-5 cardTicket mt-5">
+          <div className="bg-white hover:bg-green-500 duration-300 rounded-xl flex w-[300px] p-10 flex-col items-center">
             <img src={frame} alt="Frame" />
             {/* Mavjud bo'lsa, ticket ma'lumotlarini ko'rsatish */}
             {ticket && (

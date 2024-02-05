@@ -42,13 +42,13 @@ function TripplanFirs() {
         </div>
         <div className="lg:w-50 lg:block hidden"></div>
       </div>
-      <div className="max-w-full pt-10 overflow-x-auto scroll-x">
+      <div className="max-w-full mt-10 flex overflow-x-auto scroll-x ">
         {trips &&
           trips.map((item, index) => (
-            <div key={index} className="flex items-center space-x-6">
-              <div className="flex-shrink-0">
+            <div key={index} className="flex space-x-6  ">
+              <div className="flex-shrink-0 justify-between">
                 <button className={`${firstButtonClass} bg-blue-400`}>
-                  Bus {item.name}
+                  Bus {item.name} 
                 </button>
                 <button className={`${secondButtonClass}`}>
                   <p className="text-gray-500">8:30 | {item.description}</p>

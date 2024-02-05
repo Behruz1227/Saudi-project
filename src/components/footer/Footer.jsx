@@ -25,7 +25,7 @@ const Footer = () => {
         flexStart: 'flex justify-between items-start',
         flexCenterClass: 'flex justify-between items-center footer-main-parg'
     }
-    
+
     return (
         <div className="footer-main w-full p-24 pb-0">
             <div className={`${styles.flexStart} w-full text-white opacity-90 footer-main-box`}>
@@ -77,11 +77,11 @@ const Footer = () => {
                     <img className={styles.networkStyle} src={youtube} alt="youtube" />
                 </div>
                 <div className="opacity-75 text-[1rem]">
-                    <span className={`mr-8 ${styles.linkStyle}`}>PRIVACY POLICY</span>
+                    <span className={`mr-8 ${styles.linkStyle}`}><Link to='/privacy-policy'>PRIVACY POLICY</Link></span>
                     <span className="mr-8">|</span>
-                    <span className={`mr-8 ${styles.linkStyle}`}>TERMS AND CONDITIONS</span>
+                    <span className={`mr-8 ${styles.linkStyle}`}><Link to='/'>TERMS AND CONDITIONS</Link></span>
                     <span className="mr-8">|</span>
-                    <span className={styles.linkStyle}>DISCLAIMER</span>
+                    <span className={styles.linkStyle}><Link>DISCLAIMER</Link></span>
                 </div>
             </div>
 

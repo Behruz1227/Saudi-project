@@ -1,47 +1,34 @@
-import { frame } from "../../../assets"
+import { useEffect, useState } from "react";
+import { frame } from "../../../assets";
+import axios from "axios";
+import { url } from "../../api";
 
+function Card() {
+  const [tickets, setTickets] = useState([]);
 
-function Card(){
-    return(
-        <div className=" flex justify-center w-full">
-        <div className="flex justify-center px-4 gap-5 cradTicekt">
-          <div className="flex justify-center gap-4 w-full flex-col xl:flex-row">
+  useEffect(() => {
+    getTickets();
+  }, []);
 
-          <div class=" bg-white rounded-xl flex w-[300px] p-10">
-            <div class="flex flex-col items-center w-full">
-                <img src={frame} alt="" srcset="" />
-                <h1 className="text-green-600 text-xl font-bold mt-3 ">4 SAR</h1>
-                <p class="mt-2 text-gray-500">2 Hours Pass</p>
-            </div>
-          </div>
-          <div class="p-10 bg-white rounded-xl w-[300px] flex">
-            <div class="flex flex-col items-center w-full">
-                <img src={frame} alt="" srcset="" />
-                <h1 className="text-green-600 text-xl font-bold mt-3 ">20 SAR</h1>
-                <p class="mt-2 text-gray-500">3-Day Pass</p>
-            </div>
-          </div>
-          </div>
-          <div className="flex justify-center gap-4 w-full flex-col xl:flex-row">
-          <div class="p-10 bg-white rounded-xl w-[300px] flex">
-            <div class="flex flex-col items-center w-full">
-                <img src={frame} alt="" srcset="" />
-                <h1 className="text-green-600 text-xl font-bold  mt-3">40 SAR</h1>
-                <p class="mt-2 text-gray-500">7-Day Pass</p>
-            </div>
-          </div>
-          <div class="p-10 bg-white rounded-xl w-[300px] flex">
-            <div class="flex flex-col items-center w-full">
-                <img src={frame} alt="" srcset="" />
-                <h1 className="text-green-600 text-xl font-bold mt-3">140 SAR</h1>
-                <p class="mt-2 text-gray-500">30-Day Pass</p>
-            </div>
-          </div>
-          </div>
+  function getTickets() {
+    axios.get(`${url}ticket/list`)
+      .then((res) => setTickets(res.data.body))
+      .catch(() => console.error("Xato: Ma'lumot olishda muammo yuz berdi"));
+  }
+
+  return (
+    <div className={`max-w-[1230px] flex justify-evenly flex-wrap`}>
+      {tickets && tickets.map((item) => (
+      <div className={`w-full sm:w-[320px] md:w-[256px] lg:w-[256px] xl:w-[307.5px] px-3 py-4`} key={item.id}>
+        <div className={`bg-slate-50 px-8 py-10 shadow-md rounded-3xl hover:shadow-lg text-green-700 hover:text-white hover:bg-[#76e853] border border-slate-300 duration-300`}>
+          <img src={frame} alt="Frame" className="hover:scale-110 duration-200" />
+          <h1 className={`text-[1.5rem] mt-2.5 font-bold tracking-wide uppercase`}>{item.price} {item.currency}</h1>
+          <p className={`text-[.9rem] mt-2 font-sans font-medium text-slate-900 tracking-wider ms-.5`}>{item.pass}</p>
         </div>
-        
       </div>
-      
-    )
+      ))}
+    </div>
+  );
 }
-export default Card
+
+export default Card;

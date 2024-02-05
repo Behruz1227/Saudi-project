@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { url } from "../../api";
 
 function TripplanFirs() {
   const [trips, getTrip] = useState([]);
@@ -7,17 +8,17 @@ function TripplanFirs() {
     "font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded-3xl text-white mx-2";
   const secondButtonClass =
     "font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded-3xl text-white border  ";
-    
+
   useEffect(() => {
     getTrips();
   }, []);
   function getTrips() {
     axios
-      .get("http://139.59.14.48/route/list")
+      .get(`${url}route/list`)
       .then((res) => {
         getTrip(res.data.body);
       })
-      .catch((err) => {
+      .catch(() => {
         console.error("jigarla hato chiqdi");
       });
   }

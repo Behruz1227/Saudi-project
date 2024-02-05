@@ -111,10 +111,10 @@ const YandexMaps = () => {
                             zIndex: 1000, // Yo'lning bosish va tugash joylari bilan asosiy chiziqni yo'q qilish                            
                         }}
                     />
-                    <SearchControl
+                    {/* <SearchControl
                         options={{ position: { top: 30, left: 10 } }}
                         state={{ expanded: true }}
-                    />
+                    /> */}
                 </Map>
             </YMaps>
             <button

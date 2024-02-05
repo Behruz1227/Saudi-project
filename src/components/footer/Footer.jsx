@@ -79,7 +79,7 @@ const Footer = () => {
                 <div className="opacity-75 text-[1rem]">
                     <span className={`mr-8 ${styles.linkStyle}`}><Link to='/privacy-policy'>PRIVACY POLICY</Link></span>
                     <span className="mr-8">|</span>
-                    <span className={`mr-8 ${styles.linkStyle}`}><Link to='/'>TERMS AND CONDITIONS</Link></span>
+                    <span className={`mr-8 ${styles.linkStyle}`}><Link to='/terms-and-conditions'>TERMS AND CONDITIONS</Link></span>
                     <span className="mr-8">|</span>
                     <span className={styles.linkStyle}><Link>DISCLAIMER</Link></span>
                 </div>

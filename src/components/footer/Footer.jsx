@@ -16,19 +16,23 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     const styles = {
+        linksStyle: 'w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links',
         linkStyle: 'hover:cursor-pointer hover:text-red-600 duration-200',
         networkStyle: 'ml-8 hover:cursor-pointer hover:-mt-1 duration-300',
         buttonsStyle: 'w-32 h-10 ml-4 shadow-xl cursor-pointer hover:-mt-1 duration-200',
-        linkPargStyle: 'w-1/2 text-[1rem] tracking-widest'
+        linkPargStyle: 'w-1/2 text-[1rem] tracking-widest',
+        flexCenter: 'flex justify-between items-center',
+        flexStart: 'flex justify-between items-start',
+        flexCenterClass: 'flex justify-between items-center footer-main-parg'
     }
     
     return (
         <div className="footer-main w-full p-24 pb-0">
-            <div className="flex justify-between items-start w-full text-white opacity-90 footer-main-box">
+            <div className={`${styles.flexStart} w-full text-white opacity-90 footer-main-box`}>
                 <div className="w-2/5 footer-main-box1">
                     <img src={brand} alt="footerLogo" className="cursor-pointer opacity-100" />
                     <div className="pr-10 mt-8 lg:mt-6">
-                        <p className="flex justify-between items-center footer-main-parg">
+                        <p className={styles.flexCenterClass}>
                             <span className="opacity-75">
                                 <img src={phone} alt="number" className="w-5 inline-block -mt-1 mr-5" />
                                 Customer Care:
@@ -37,7 +41,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="pr-10 mt-4">
-                        <p className="flex justify-between items-center footer-main-parg">
+                        <p className={styles.flexCenterClass}>
                             <span className="opacity-75">
                                 <img src={email} alt="email" className="w-5 inline-block -mt-1 mr-5" />
                                 Email us at:
@@ -47,15 +51,15 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="w-3/5 pl-10 footer-main-box2">
-                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
+                    <div className={styles.linksStyle}>
                         <p className={styles.linkPargStyle}><Link to='/about' className={styles.linkStyle}>About Riyadh Bus</Link></p>
                         <p className={`${styles.linkPargStyle} text-right`}><Link to='/routes' className={styles.linkStyle}>Explore Routes</Link></p>
                     </div>
-                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
+                    <div className={styles.linksStyle}>
                         <p className={styles.linkPargStyle}><Link to='/tickets' className={styles.linkStyle}>Tickets & fares</Link></p>
                         <p className={`${styles.linkPargStyle} text-right`}><Link to='/plan' className={styles.linkStyle}>PLAN YOUR TRIP</Link></p>
                     </div>
-                    <div className="w-full flex justify-start items-start border-b border-b-slate-600 pb-3 my-4 footer-main-links">
+                    <div className={styles.linksStyle}>
                         <p className={styles.linkPargStyle}><Link to='/contact' className={styles.linkStyle}>Contact Us</Link></p>
                         <p className={`${styles.linkPargStyle} text-right`}><Link to='/question' className={styles.linkStyle}>FAQs</Link></p>
                     </div>

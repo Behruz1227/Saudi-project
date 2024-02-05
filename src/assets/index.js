@@ -3,11 +3,9 @@ import chipta from "./tickets/chipta.png"
 import navbarlo from './NavbarAsist/navbarlo.svg'
 import navbarlo1 from './NavbarAsist/navbarlogo1.svg'
 import navbarlo2 from './NavbarAsist/navbarlo2.svg'
-import routeimg from './route/mask_group.png'
 import  routerr from './route/routerr.svg'
 import location from './route/location.svg'
 import busAcardion from './route/Bus.svg'
-import rectangle from './route/rectangle.png'
 import vector from './route/Vector.svg'
 import kvadrat from "./tickets/kvadrat.png"
 import frame from "./tickets/Frame (2).png"
@@ -24,6 +22,9 @@ import appleimg from './tickets/appleimg.png'
 import message from './contact/call.svg'
 import answer  from './contact/message.svg'
 import  call from './contact/answer.svg'
+import accardion1 from './route/accardion1.svg'
+import accardion3 from './route/accardion3.svg'
+import routerImage from './route/routerimage.png'
 
 
 export {
@@ -32,11 +33,9 @@ export {
     navbarlo,
     navbarlo1,
     navbarlo2,
-    routeimg,
     kvadrat,
     frame,
     routerr,
-    rectangle,
     location,
     busAcardion,
     vector,
@@ -53,4 +52,7 @@ export {
     call,
     message,
     answer,
+    accardion1,
+    accardion3,
+    routerImage
 }

@@ -1,7 +1,6 @@
 import {
   card,
   card1,
-  carta,
   group3,
   mobile,
   payment,

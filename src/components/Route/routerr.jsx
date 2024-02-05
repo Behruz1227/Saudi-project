@@ -1,17 +1,40 @@
-import { routeimg, } from '../../assets'
+import axios from 'axios'
+// import { routeimg, } from '../../assets' 
 import { brandingElement } from '../about/components/imgs'
 import Footer from '../footer/Footer'
 import { styles } from '../style'
 import RouterBottom from './routerBottom'
 import RouterBtn from './routerBtn'
 import RouterRow from './routerRow'
+import { url } from '../api'
+import { useEffect, useState } from 'react'
 
 const Routerr = () => {
+  const [route, setRoute] = useState([])
+  useEffect(() => {
+    getBusses()
+  }, [])
+
+  const getBusses = () => {
+    axios.get(`${url}route/list`)
+      .then((res) => {
+        setRoute(res.data.body)
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  }
+
+
+
+
+
   return (
     <>
-      <div className={` ${styles.flexCenter} container-top containerr`} >
-          <img src={routeimg} alt="route" className='relative z-[-1]' />
-          <h1 className=' head absolute top-[27%] left-[10%] text-[65px] text-white '>Route</h1>
+      <div className={`flex justify-center items-center rounded-3xl overflow-hidden w-full px-10`}>
+        <div className='max-w-[1450px] h-[40vh] rounded-3xl lg:h-[75vh] sm:h-[50vh] md:h-[60vh] w-full router-main'>
+      
+        </div>
       </div>
       <div className='w-full flex justify-between items-start sm:py-10  py-5 text-top'>
         <div className='w-1/2 flex justify-between text-top-container'>
@@ -21,9 +44,9 @@ const Routerr = () => {
           <div className='headingDiv w-full pl-5'>
             <p className='text-[1.2rem] tracking-wide font-medium' style={{ color: "#00CF00" }}>OVERVIEW</p>
             <h1 className='sm:mt-10 md:mt-10  text-[2rem] font-bold heading-tags-colors'>
-              Quickly access <br />
-              your favorite <br />
-              destinations <br />
+              Quickly access
+              your favorite
+              destinations
             </h1>
           </div>
         </div>
@@ -31,7 +54,7 @@ const Routerr = () => {
           <p className='sm:mt-14 textbottomp1  w-full'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat metus at purus blandit tincidunt pharetra vel lorem. Maecenas massa ante, iaculis a ipsum at, ornare dictum sapien.
           </p>
-          <p className='mt-6'>
+          <p className='mt-6 textbottomp1'>
             Praesent ut felis vitae purus semper vehicula sed in massa. Fusce finibus dolor eget lectus viverra posuere. In non eleifend elit, et lacinia elit
           </p>
         </div>
@@ -43,11 +66,14 @@ const Routerr = () => {
         <RouterBottom />
       </div>
       <div className={` ${styles} w-full flex flex-col items-center justify-center`}>
-        <RouterRow id="1"/>
-        <RouterRow id="2"/>
-        <RouterRow id="3"/>
+        {
+          route.length && route.map((item, i) =>
+            <RouterRow id={item.id} item={item} />
+          )
+        }
+
       </div>
-      <Footer/>
+      <Footer />
 
     </>
 

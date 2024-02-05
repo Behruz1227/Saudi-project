@@ -4,88 +4,28 @@ const Chupah2 = ({ fromTransBus }) => {
     const [active, Setactive] = useState(false)
     const activeToggle = () => Setactive(!active);
 
-    const a = [
-        {
-            tittle: "Sardorbek"
-        },
-        {
-            tittle: "Aktambek"
-        },
-        {
-            tittle: "sdnaskd"
-        },
-        {
-            tittle: "Sardadwekdhwwiuorbek"
-        },
-        {
-            tittle: "Sarddasdadasorbek"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "Sardoadaddarbek"
-        }
-    ]
+    let transAvto, FromtransArr = [];
+    for (let i = 4; i < fromTransBus.length - 1; i++) FromtransArr.push(fromTransBus[i])
+    for (let i = 0; i < fromTransBus.length; i++) {
+        if (fromTransBus.length - 1 === i) transAvto = fromTransBus[i];
+    }
 
     return (
         <div className="">
             <ul className="stop-list ">
                 <li className="list-circle ">
-                    Transportation Center
+                    {fromTransBus[3]}
                 </li>
                 <li onClick={activeToggle} className={`${active ? "openClose" : ""} list-circles`}>
-                    <span className="spanchart">show {a.length} Stop</span>
+                    <span className="spanchart">show {fromTransBus.length-5} Stop</span>
                     <ul className="close">
-                        {a.map((item) =>
-                            <li className="list-circlesW ">{item.tittle}</li>
+                        { FromtransArr.map((item) =>
+                            <li className="list-circlesW ">{item}</li>
                         )}
                     </ul>
                 </li>
                 <li className="list-circless mb-6 ">
-                    Transportation Center
+                    {transAvto}
                 </li>
             </ul >
         </div>

@@ -17,7 +17,7 @@ const Chupah = ({ toTransBus }) => {
                     {toTransBus[3]}
                 </li>
                 <li onClick={activeToggle} className={`${active ? "openClose" : ""} list-circles`}>
-                    <span className="spanchart">show {toTransBus.length - 5} Stop</span>
+                    <span className="spanchart">show {toTransBus.length-5} Stop</span>
                     <ul className="close">
                         {newArr && newArr.map((item, i) =>
                             <li className="list-circlesW" key={i}>{item}</li>

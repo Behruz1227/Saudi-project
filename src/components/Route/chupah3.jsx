@@ -3,89 +3,27 @@ import { useState } from "react"
 const Chupah3 = ({ landmarks }) => {
     const [active, Setactive] = useState(false)
     const activeToggle = () => Setactive(!active);
-
-    const a = [
-        {
-            tittle: "Sardorbek"
-        },
-        {
-            tittle: "Aktambek"
-        },
-        {
-            tittle: "sdnaskd"
-        },
-        {
-            tittle: "Sardadwekdhwwiuorbek"
-        },
-        {
-            tittle: "Sarddasdadasorbek"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "adsd"
-        },
-        {
-            tittle: "Sardoadaddarbek"
-        }
-    ]
+    let landmarAvto,landmarkAvtoArr=[];
+    for (let i = 3; i < landmarks.length - 1; i++) landmarkAvtoArr.push(landmarks[i])
+    for (let i = 0; i < landmarks.length; i++) {
+        if (landmarks.length - 1 === i) landmarAvto = landmarks[i];
+    }
 
     return (
         <div className="">
-            <ul className="stop-list ">
-                <li className="list-circle ">
-                    Transportation Center
+            <ul  >
+                <li className="">
+                    {landmarks[2]}
                 </li>
-                <li onClick={activeToggle} className={`${active ? "openClose" : ""} list-circles`}>
-                    <span className="spanchart">show {a.length} Stop</span>
+                <li onClick={activeToggle} >
                     <ul className="close">
-                        {a.map((item) =>
-                            <li className="list-circlesW ">{item.tittle}</li>
+                        {landmarkAvtoArr.map((item) =>
+                            <li className="list-circlesW ">{item}</li>
                         )}
                     </ul>
                 </li>
-                <li className="list-circless mb-6 ">
-                    Transportation Center
+                <li className=" mb-6 ">
+                    {landmarAvto}
                 </li>
             </ul >
         </div>

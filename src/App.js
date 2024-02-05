@@ -8,6 +8,7 @@ import QuestionsOne from './components/question/QuestionsOne';
 import Navbars from './components/navbar/Navbars';
 import Location from './components/location/Location';
 import { useEffect } from 'react';
+import PrivacyPolicy from './components/footer-pages/privacy-policy';
 
 function App() {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <Route path='/contact' element={<Contactus />} />
         <Route path='/tickets' element={<Tickets />} />
         <Route path='/question' element={<QuestionsOne />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
     </>
   );

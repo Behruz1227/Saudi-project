@@ -1,4 +1,4 @@
-import { accardion1, accardion2, accardion3 } from '../../assets'
+import { accardion1, accardion3 } from '../../assets'
 import Chupah from './chupah'
 
 const AccardionOpen = () => {

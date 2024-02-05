@@ -9,6 +9,7 @@ import Navbars from './components/navbar/Navbars';
 import Location from './components/location/Location';
 import { useEffect } from 'react';
 import PrivacyPolicy from './components/footer-pages/privacy-policy';
+import TermsAndConditions from './components/footer-pages/terms-and-conditions';
 
 function App() {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ function App() {
         <Route path='/tickets' element={<Tickets />} />
         <Route path='/question' element={<QuestionsOne />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/terms-and-conditions' element={<TermsAndConditions/>}/>
       </Routes>
     </>
   );

@@ -216,6 +216,10 @@ ul.stop-list::before {
     gap: 0.3rem;
     align-items: center;
   }
+  /* .collapsible-item-label  button{
+    width: 38px;
+    border-radius: 38px;
+  } */
   .collapsible-p{
     border-left: 0px solid #C0C0C0;
     /* padding: 1rem 2rem!important;  */
@@ -329,11 +333,13 @@ ul.stop-list::before {
   }
 
   .collapsible-accordion button {
-    font-size: 14px;
+    /* font-size: 14px;
     font-weight: 400;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.8rem; */
+    width: 53px;
+    border-radius: 33px;
   }
 
   .mediaAccardion {
@@ -554,7 +560,7 @@ ul.stop-list::before {
     /* top: -5.5px; */
     margin-top: 20px;
     border-radius: 50%;
-    background-color: #f15b5b;
+    background-color: #2DA44A;
   }
 
   /* .collapsible-item-label {

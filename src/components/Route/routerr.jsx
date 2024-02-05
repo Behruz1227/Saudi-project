@@ -1,5 +1,4 @@
-import axios from 'axios'
-// import { routeimg, } from '../../assets' 
+import axios from 'axios';
 import { brandingElement } from '../about/components/imgs'
 import Footer from '../footer/Footer'
 import { styles } from '../style'
@@ -10,31 +9,22 @@ import { url } from '../api'
 import { useEffect, useState } from 'react'
 
 const Routerr = () => {
-  const [route, setRoute] = useState([])
+  const [route, setRoute] = useState([]);
+  
   useEffect(() => {
     getBusses()
   }, [])
 
   const getBusses = () => {
     axios.get(`${url}route/list`)
-      .then((res) => {
-        setRoute(res.data.body)
-      })
-      .catch((err) => {
-        console.log(err);
-      })
+      .then((res) => setRoute(res.data.body))
+      .catch((err) => console.log(err))
   }
-
-
-
-
 
   return (
     <>
       <div className={`flex justify-center items-center rounded-3xl overflow-hidden w-full px-10`}>
-        <div className='max-w-[1450px] h-[40vh] rounded-3xl lg:h-[75vh] sm:h-[50vh] md:h-[60vh] w-full router-main'>
-      
-        </div>
+        <div className='max-w-[1450px] h-[40vh] rounded-3xl lg:h-[75vh] sm:h-[50vh] md:h-[60vh] w-full router-main'></div>
       </div>
       <div className='w-full flex justify-between items-start sm:py-10  py-5 text-top'>
         <div className='w-1/2 flex justify-between text-top-container'>
@@ -66,12 +56,9 @@ const Routerr = () => {
         <RouterBottom />
       </div>
       <div className={` ${styles} w-full flex flex-col items-center justify-center`}>
-        {
-          route.length && route.map((item, i) =>
-            <RouterRow id={item.id} item={item} />
-          )
-        }
-
+        {route.length && route.map((item) => (
+          <RouterRow id={item.id} item={item} />
+        ))}
       </div>
       <Footer />
 

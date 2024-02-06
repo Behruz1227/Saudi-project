@@ -32,7 +32,16 @@ const Navbars = () => {
                 ? 'sticky px-4 py-3 w-[70%] ml-[15%] shadow-lg rounded-3xl border border-green-500 bg-white'
                 : ''} py-2 z-50`}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
-                <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                <Link
+                    to="/"
+                    onClick={() => {
+                        setNavActive(false);
+                        setNavActive2(false);
+                        setNavActive3(false);
+                        setNavActive4(false);
+                        setNavActive5(false);
+                    }}
+                    className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={logoimage} className="h-8" alt="Logo" />
                 </Link>
 

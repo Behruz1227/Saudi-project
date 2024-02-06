@@ -177,11 +177,15 @@ ul.stop-list::before {
   border-radius: 50%;
   background-color: #2DA44A;
 }
-
-.openClose .close{
+.close{
   height: 0;
   display: none;
-  /* transform: translateY(0); */
+}
+
+
+.openClose .close{
+  height: auto;
+  display: block;
 }
 .spanchart{
   color: #2DA44A;
@@ -210,11 +214,17 @@ ul.stop-list::before {
   background-color: #D4D4D4;
 }
 
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:400px) {
   .collapsible-item-label .collapsible-div {
     display: flex;
     gap: 0.3rem;
     align-items: center;
+  }
+  .collapsible-accordion button{
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 53px;
+    font-size: 10px;
   }
   /* .collapsible-item-label  button{
     width: 38px;

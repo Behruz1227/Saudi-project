@@ -9,10 +9,12 @@ const Chupah = ({ toTransBus }) => {
         if (toTransBus.length - 1 === i) toTransBusLast = toTransBus[i];
     }
     for (let i = 4; i < toTransBus.length - 1; i++) newArr.push(toTransBus[i]);
+    // =-=====-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+    const [color,setcolor]=useState([])
 
     return (
         <div className="">
-            <ul className="stop-list ">
+            <ul className={`stop-list`} >
                 <li className="list-circle ">
                     {toTransBus[3]}
                 </li>

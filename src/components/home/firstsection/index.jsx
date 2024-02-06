@@ -18,9 +18,10 @@ function TripplanFirs() {
       .get(`${url}route/list`)
       .then((res) => {
         getTrip(res.data.body);
+        console.log(res.data);
       })
-      .catch(() => {
-        console.error("jigarla hato chiqdi");
+      .catch((err) => {
+        console.error(err);
       });
   }
 
@@ -45,8 +46,8 @@ function TripplanFirs() {
         </div>
         <div className="lg:w-50 lg:block hidden"></div>
       </div>
-      <div className="max-w-full mt-10 flex overflow-x-auto scroll-x ">
-        {trips &&
+      <div className="max-w-full mt-10 flex overflow-x-auto scroll-x">
+        {trips ?
           trips.map((item, index) => (
             <div key={index} className="flex space-x-6  ">
               <div className="flex-shrink-0 justify-between">
@@ -61,7 +62,7 @@ function TripplanFirs() {
               {/* O'rtadagi nuqta */}
               <i className="fa-solid fa-circle text-black"></i>
             </div>
-          ))}
+          )): <div className="bg-red-400 text-black w-max px-5 py-3 rounded-2xl text-white">Network Error !</div>}
       </div>
     </div>
   );

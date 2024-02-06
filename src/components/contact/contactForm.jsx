@@ -34,14 +34,14 @@ const ContactForm = () => {
   }
 
   let style = {
-    checkbox: 'flex items-center',
+    checkbox: 'flex items-center ',
     checkboxInput: 'cursor-pointer w-5 h-5 mr-2',
     cardsStyle: 'w-full flex bg-[#FFFFFF] shadow-lg rounded-[0.8rem] my-3'
   }
 
   return (
     <>
-      <div className='flex justify-start items-start'>
+      <div className='flex justify-start flex-wrap items-start'>
         <div className={style.checkbox}>
           <input
             onChange={inputHanler}

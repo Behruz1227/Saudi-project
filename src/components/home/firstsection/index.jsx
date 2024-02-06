@@ -18,7 +18,7 @@ function TripplanFirs() {
       .get(`${url}route/list`)
       .then((res) => {
         getTrip(res.data.body);
-        console.log(res.data);
+        // console.log(res.data.body);
       })
       .catch((err) => {
         console.error(err);
@@ -46,23 +46,23 @@ function TripplanFirs() {
         </div>
         <div className="lg:w-50 lg:block hidden"></div>
       </div>
-      <div className="max-w-full mt-10 flex overflow-x-auto scroll-x">
+      <div className="mt-10 flex justify-start overflow-x-auto">
         {trips ?
           trips.map((item, index) => (
-            <div key={index} className="flex space-x-6  ">
-              <div className="flex-shrink-0 justify-between">
-                <button className={`${firstButtonClass} bg-blue-400`}>
-                  Bus {item.name}
-                </button>
-                <button className={`${secondButtonClass}`}>
-                  <p className="text-gray-500">8:30 | {item.description}</p>
-                </button>
-              </div>
+            <div key={index} className="flex justify-start items-center flex-shrink-0">
+              {/* <div className=""> */}
+              <button className={`${firstButtonClass} bg-blue-400`}>
+                Bus {item.name}
+              </button>
+              <button className={`${secondButtonClass} mx-3`}>
+                <p className="text-gray-500">8:30 | {item.description}</p>
+              </button>
+              {/* </div> */}
 
               {/* O'rtadagi nuqta */}
-              <i className="fa-solid fa-circle text-black"></i>
+              <i className="fa-solid fa-circle text-black mr-2"></i>
             </div>
-          )): <div className="bg-red-400 text-black w-max px-5 py-3 rounded-2xl text-white">Network Error !</div>}
+          )) : <div className="bg-red-400 text-black w-max px-5 py-3 rounded-2xl">Network Error !</div>}
       </div>
     </div>
   );

@@ -7,6 +7,11 @@ const Navbars = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenDrop, setIsOpenDrop] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+    const [navActive, setNavActive] = useState(false);
+    const [navActive2, setNavActive2] = useState(false);
+    const [navActive3, setNavActive3] = useState(false);
+    const [navActive4, setNavActive4] = useState(false);
+    const [navActive5, setNavActive5] = useState(false);
 
     const openMenu = () => setIsOpen(!isOpen);
     const openDropDown = () => setIsOpenDrop(!isOpenDrop);
@@ -75,7 +80,7 @@ const Navbars = () => {
 
                 {/* desktop nav */}
                 <div
-                    className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                    className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-gray-900"
                     id="navbar-cta">
                     <ul
                         className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 
@@ -83,37 +88,72 @@ const Navbars = () => {
                         <li>
                             <Link
                                 to="/plan"
-                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
-                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
-                                focus:text-yellow-400 focus:font-semibold duration-200">Plan</Link>
+                                onClick={() => {
+                                    setNavActive(true);
+                                    setNavActive2(false);
+                                    setNavActive3(false);
+                                    setNavActive4(false);
+                                    setNavActive5(false);
+                                }}
+                                className={`${navActive ? 'border-b-2 border-b-red-400 text-yellow-400 font-semibold hover:text-yellow-400' : ''} 
+                                font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 duration-200`}>Plan</Link>
                         </li>
                         <li>
                             <Link
                                 to="/routes"
-                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
-                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
-                                focus:text-yellow-400 focus:font-semibold duration-200">Routes</Link>
+                                onClick={() => {
+                                    setNavActive(false);
+                                    setNavActive2(true);
+                                    setNavActive3(false);
+                                    setNavActive4(false);
+                                    setNavActive5(false);
+                                }}
+                                className={`${navActive2 ? 'border-b-2 border-b-red-400 text-yellow-400 font-semibold hover:text-yellow-400' : ''} 
+                                font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 duration-200`}>Routes</Link>
                         </li>
                         <li>
                             <Link
                                 to="/tickets"
-                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
-                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
-                                focus:text-yellow-400 focus:font-semibold duration-200">Tickets</Link>
+                                onClick={() => {
+                                    setNavActive(false);
+                                    setNavActive2(false);
+                                    setNavActive3(true);
+                                    setNavActive4(false);
+                                    setNavActive5(false);
+                                }}
+                                className={`${navActive3 ? 'border-b-2 border-b-red-400 text-yellow-400 font-semibold hover:text-yellow-400' : ''} 
+                                font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 duration-200`}>Tickets</Link>
                         </li>
                         <li>
                             <Link
                                 to="/about"
-                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
-                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
-                                focus:text-yellow-400 focus:font-semibold duration-200">About</Link>
+                                onClick={() => {
+                                    setNavActive(false);
+                                    setNavActive2(false);
+                                    setNavActive3(false);
+                                    setNavActive4(true);
+                                    setNavActive5(false);
+                                }}
+                                className={`${navActive4 ? 'border-b-2 border-b-red-400 text-yellow-400 font-semibold hover:text-yellow-400' : ''} 
+                                font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 duration-200`}>About</Link>
                         </li>
                         <li>
                             <Link
                                 to="/contact"
-                                className="text-gray-900 font-medium font-mono text-[1.2rem] tracking-wide 
-                                px-1 pb-1 hover:text-gray-500 focus:border-b-2 focus:border-b-red-400 
-                                focus:text-yellow-400 focus:font-semibold duration-200">Contact</Link>
+                                onClick={() => {
+                                    setNavActive(false);
+                                    setNavActive2(false);
+                                    setNavActive3(false);
+                                    setNavActive4(false);
+                                    setNavActive5(true);
+                                }}
+                                className={`${navActive5 ? 'border-b-2 border-b-red-400 text-yellow-400 font-semibold hover:text-yellow-400' : ''} 
+                                font-medium font-mono text-[1.2rem] tracking-wide 
+                                px-1 pb-1 hover:text-gray-500 duration-200`}>Contact</Link>
                         </li>
                     </ul>
                 </div>

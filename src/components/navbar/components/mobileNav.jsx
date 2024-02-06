@@ -32,7 +32,7 @@ const MobileNav = (props) => {
                             setNavActive5(false);
                         }}
                         to="/plan"
-                        className={`pt-4 px-1 ${navActive ? 'text-green-500 font-bold border-b-2 border-b-yellow-400 duration-200' : ''}`}>Plan</Link>
+                        className={`pt-4 px-[2px] ${navActive ? 'text-green-500 font-bold border-b-2 border-b-slate-700 duration-200' : ''}`}>Plan</Link>
                 </li>
                 <li className="w-full flex justify-center items-start text-center">
                     <Link
@@ -45,7 +45,7 @@ const MobileNav = (props) => {
                             setNavActive5(false);
                         }}
                         to="/routes"
-                        className={`pt-4 px-1 ${navActive2 ? 'text-green-500 font-bold border-b-2 border-b-yellow-400 duration-200' : ''}`}>Routes</Link>
+                        className={`pt-4 px-[2px] ${navActive2 ? 'text-green-500 font-bold border-b-2 border-b-slate-700 duration-200' : ''}`}>Routes</Link>
                 </li>
                 <li className="w-full flex justify-center items-start text-center">
                     <Link
@@ -58,7 +58,7 @@ const MobileNav = (props) => {
                             setNavActive5(false);
                         }}
                         to="/tickets"
-                        className={`pt-4 px-1 ${navActive3 ? 'text-green-500 font-bold border-b-2 border-b-yellow-400 duration-200' : ''}`}>Tickets</Link>
+                        className={`pt-4 px-[2px] ${navActive3 ? 'text-green-500 font-bold border-b-2 border-b-slate-700 duration-200' : ''}`}>Tickets</Link>
                 </li>
                 <li className="w-full flex justify-center items-start text-center">
                     <Link
@@ -71,7 +71,7 @@ const MobileNav = (props) => {
                             setNavActive5(false);
                         }}
                         to="/about"
-                        className={`pt-4 px-1 ${navActive4 ? 'text-green-500 font-bold border-b-2 border-b-yellow-400 duration-200' : ''}`}>About</Link>
+                        className={`pt-4 px-[2px] ${navActive4 ? 'text-green-500 font-bold border-b-2 border-b-slate-700 duration-200' : ''}`}>About</Link>
                 </li>
                 <li className="w-full flex justify-center items-start text-center">
                     <Link
@@ -84,7 +84,7 @@ const MobileNav = (props) => {
                             setNavActive5(true);
                         }}
                         to="/contact"
-                        className={`pt-4 px-1 ${navActive5 ? 'text-green-500 font-bold border-b-2 border-b-yellow-400 duration-200' : ''}`}>Contact</Link>
+                        className={`pt-4 px-[2px] ${navActive5 ? 'text-green-500 font-bold border-b-2 border-b-slate-700 duration-200' : ''}`}>Contact</Link>
                 </li>
             </ul>
         </div>

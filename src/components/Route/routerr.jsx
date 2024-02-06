@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 
 const Routerr = () => {
   const [route, setRoute] = useState([]);
-  
+
   useEffect(() => {
     getBusses()
   }, [])

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { url } from "../../api";
+import { Link } from "react-router-dom";
 
 function TripplanFirs() {
   const [trips, getTrip] = useState([]);
@@ -34,9 +35,11 @@ function TripplanFirs() {
             <p className="mb-5">
               We're committed to create a safe environment for our users.
             </p>
-            <button className="bg-lime-500 rounded-3xl md:py-3 py-2 md:px-10 px-5 mb-5">
-              Plan your trip
-            </button>
+            <Link to='/plan'>
+              <button className="bg-lime-500 rounded-3xl md:py-3 py-2 md:px-10 px-5 mb-5">
+                Plan your trip
+              </button>
+            </Link>
             <p>Learn more about Riyadh bus transportation </p>
           </div>
         </div>
@@ -48,7 +51,7 @@ function TripplanFirs() {
             <div key={index} className="flex space-x-6  ">
               <div className="flex-shrink-0 justify-between">
                 <button className={`${firstButtonClass} bg-blue-400`}>
-                  Bus {item.name} 
+                  Bus {item.name}
                 </button>
                 <button className={`${secondButtonClass}`}>
                   <p className="text-gray-500">8:30 | {item.description}</p>

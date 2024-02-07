@@ -7,10 +7,15 @@ const AccardionOpen = ({ landmarks, toTransBus, fromTransBus }) => {
   const styles = { pargStyle: 'text-xs accardionP font-normal w-[13rem] text-[#737373]' }
 
   let toTrans = [], fromTrans = [], landmark = [];
-  for (let i = 0; i < 3; i++) toTrans.push(toTransBus[i])
-  for (let i = 0; i < 3; i++) fromTrans.push(fromTransBus[i])
-  for (let i = 0; i < 2; i++) landmark.push(landmarks[i])
-
+  for (let i = 0; i < 3; i++) {
+    toTrans.push(toTransBus[i])
+  }
+  for (let i = 0; i < 3; i++) {
+    fromTrans.push(fromTransBus[i])
+  }
+  for (let i = 0; i < 2; i++) {
+    landmark.push(landmarks[i])
+  }
   return (
     <div className='w-100% mx-auto h-[20rem] overflow-y-auto scroll-style mediaAccardion gap-10'>
       <div className='acardion-flex'>

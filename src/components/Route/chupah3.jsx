@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 const Chupah3 = ({ landmarks }) => {
+    console.log(landmarks);
     const [active, Setactive] = useState(false)
     const activeToggle = () => Setactive(!active);
     let landmarAvto,landmarkAvtoArr=[];
@@ -12,17 +13,17 @@ const Chupah3 = ({ landmarks }) => {
     return (
         <div className="">
             <ul  >
-                <li className="">
+                <li className="text-xs">
                     {landmarks[2]}
                 </li>
-                <li onClick={activeToggle} >
+                {/* <li onClick={activeToggle} >
                     <ul className="close">
                         {landmarkAvtoArr.map((item) =>
                             <li className="list-circlesW ">{item}</li>
                         )}
                     </ul>
-                </li>
-                <li className=" mb-6 ">
+                </li> */}
+                <li className=" mb-6 text-xs ">
                     {landmarAvto}
                 </li>
             </ul >

@@ -4,8 +4,7 @@ import Chupah from './chupah';
 import Chupah2 from './chupah2';
 import Chupah3 from './chupah3';
 
-const AccardionOpen = ({ rote }) => {
-
+const AccardionOpen = ({ rote, stops,landmarks }) => {
   const styles = { pargStyle: 'text-xs accardionP font-normal w-[13rem] text-[#737373]' }
 
   return (
@@ -21,7 +20,8 @@ const AccardionOpen = ({ rote }) => {
           </div>
         </div>
         <div className='list-map'>
-         {rote && <Chupah rote={rote[0]} />}
+          <Chupah stops={stops} />
+         
         </div>
       </div>
       <div className='acardion-flex'>
@@ -35,7 +35,7 @@ const AccardionOpen = ({ rote }) => {
           </div>
         </div>
         <div className='list-map'>
-          {/* <Chupah2  /> */}
+          <Chupah2  stops={stops} />
         </div>
       </div>
       <div className='acardion-flex'>
@@ -47,12 +47,11 @@ const AccardionOpen = ({ rote }) => {
             </h3>
             <p className={styles.pargStyle}>
             {rote[0] && rote[0].landmarks[1]}
-            {rote[0] && rote[0].landmarks[2]}
             </p>
           </div>
         </div>
         <div className='list-map'>
-          {/* <Chupah3  /> */}
+          <Chupah3  landmarks={landmarks}  />
         </div>
       </div>
 

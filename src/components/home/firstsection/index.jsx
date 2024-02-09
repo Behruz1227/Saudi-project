@@ -41,7 +41,7 @@ function TripplanFirs() {
                 Plan your trip
               </button>
             </Link>
-            <p>Learn more about Riyadh bus transportation </p>
+            <p className=" border-b w-max pb-1 hover:border-black transition-all">Learn more about Riyadh bus transportation </p>
           </div>
         </div>
         <div className="lg:w-50 lg:block hidden"></div>

@@ -7,9 +7,9 @@ import buss from "../../../assets/home-page/buss.png"
 
 function BusPlan() {
     return (
-        <div className='w-full lg:h-[500px] md:h-[700px] h-max py-5 md:px-10 px-3 flex items-center lg:flex-row flex-col bg-neutral-800 text-white relative'>
+        <div className='w-full lg:h-[500px] md:h-[700px] h-maxmd  py-5 md:px-10 px-3 flex items-center lg:flex-row flex-col bg-neutral-800 text-white relative'>
             <img src={circle} alt="" className='absolute left-0 right-0 mx-auto bsolute top-0 bottom-0 my-auto w-80' />
-            <div className='md:w-7/12 w-full flex lg:h-[470px] h-max'>
+            <div className='md:w-7/12 w-full flex lg:h-[470px] h-max md:pt-20'>
                 <div className='mr-5'>
                     <img src={uber} alt="" className='w-[200px]' />
                 </div>

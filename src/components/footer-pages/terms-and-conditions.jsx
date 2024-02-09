@@ -5,11 +5,12 @@ const TermsAndConditions = () => {
     const styleJsx = {
         marginT: 'mt-5 text-xs font-medium ',
         pfonsTsize: 'text-xs font-extrabold  ',
-        hrefStyle: 'underline text-[#0563C1]'
+        hrefStyle: 'underline text-[#0563C1]',
+        containers:'w-[100%] pr-[1.5rem] pl-[1.5rem] mx-auto md:max-w-[1110px] md:mx-auto '
     }
     return (
         <>
-            <div className="md:max-w-[1100px] md:mx-auto mx-auto  mt-10 mb-10 ">
+            <div className={`${styleJsx.containers} mb-10`}>
                 <h3 className="text-center font-semibold text-sm">“darb” Card and riyadh bus Application and Website Terms and Conditions</h3>
                 <p className={`${styleJsx.marginT}`}>June 19, 2023</p>
                 <p className={`${styleJsx.marginT} ${styleJsx.pfonsTsize}`}>General Usage</p>

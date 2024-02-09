@@ -17,7 +17,9 @@ const Routerr = () => {
 
   const getBusses = () => {
     axios.get(`${url}route/list`)
-      .then((res) => setRoute(res.data.body))
+      .then((res) => {
+        setRoute(res.data.body)
+      })
       .catch((err) => console.log(err))
   }
 

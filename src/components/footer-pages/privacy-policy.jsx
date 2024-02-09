@@ -4,15 +4,16 @@ import Footer from '../footer/Footer'
 
 const PrivacyPolicy = () => {
   const styles = {
-    pargStyle: 'text-start mt-5 text-[.95rem]',
-    smallStyle: 'text-start mt-5 text-[.9rem] font-semibold',
-    linkStyle: 'underline text-blue-700 font-medium mx-2'
+    pargStyle: 'text-start mt-5 text-xs',
+    smallStyle: 'text-start mt-5 text-xs font-semibold',
+    linkStyle: 'underline text-blue-700 font-medium mx-2',
+    mediaContainer:'w-[100%] pr-[1.5rem] pl-[1.5rem] mx-auto md:max-w-[1110px] md:mx-auto  '
   }
 
   return (
     <>
       <div className={`flex justify-center`}>
-        <div className={`max-w-[1300px] mt-10`}>
+        <div className={`${styles.mediaContainer} `}>
           <h3 className='text-center font-semibold text-[1rem] tracking-tight opacity-90'>
             “darb” CARD AND RIYADH BUS WEBSITE PRIVACY AND DATA PROTECTION POLICY
           </h3>
@@ -145,13 +146,13 @@ const PrivacyPolicy = () => {
             remember you when you return to the App and will last for longer. These are known as “persistent cookies”.
           </p>
           <p className={styles.pargStyle}>We may use cookies to:</p>
-          <ul className='ps-10'>
-            <li className='mt-4'>
+          <ul className='ps-10 '>
+            <li className='mt-4 text-xs'>
               a. remember that you have visited us before, which allows us to identify the number of unique visitors
               we receive. This allows us to make sure we have enough capacity for the number of users that we get
               and to; customise elements of the promotional layout and/or content of the pages of the App; and
-            </li>
-            <li>
+            </li >
+            <li className='text-xs'>
               b. collect information about how you use the App so that we can improve the App and learn which parts
               of the App are most useful.
             </li>
@@ -190,28 +191,28 @@ const PrivacyPolicy = () => {
           <p className={`${styles.pargStyle} font-semibold`}>2. HOW YOUR INFORMATION MAY BE USED AND BY WHOM?</p>
           <p className={styles.pargStyle}>We use the information we collect to:</p>
           <ul className='ps-10'>
-            <li className='mt-4'>
+            <li className='mt-4 text-xs'>
               a. Provide and improve our App, QR e-ticket services and darb card;
             </li>
-            <li>
+            <li className='text-xs'>
               b. Build a profile of your preferences so we can personalise the Riyadh Bus App and provide you with
               relevant transport information;
             </li>
-            <li>
+            <li  className='text-xs'>
               c. Recommend transport options that match your stated preferences and previous use of the App;
             </li>
-            <li>d. Administer your account with us, if you have one;</li>
-            <li>e. Confirm your eligibility to use darb card;</li>
-            <li>f. Verify your identity (including processing of your identity documents in order to confirm your identity and to make an automated decision as to whether or not to provide you with darb card services);</li>
-            <li>g. Process or facilitate payment (through third party payment processing services) for QR e-ticket, and darb card;</li>
-            <li>h. Send you transaction receipts for your use of QR e-ticket and/or darb card;</li>
-            <li>i. Respond to your emails to discuss your use of the App, QR e-ticket, darb card and answer any support queries you may have;</li>
-            <li>j. Send you marketing communications by email or in-App notifications, and let you know about our policies and terms or when we expand services in Riyadh city;</li>
-            <li>k. Identify issues with the operation of the App, and provide crash reports in order to find resolution for performance issues;</li>
-            <li>l. Improve the design, functionality and/or content of the pages of the App and customise them for you;</li>
-            <li>m. Carry out research on users' transport choices to improve the App, and darb card;</li>
-            <li>n. Conduct studies on use of public transit and ridership;</li>
-            <li>o. Disclose to lawful authorities when required to do so by law, or when appropriate, in our opinion, to respond to their request.</li>
+            <li  className='text-xs'>d. Administer your account with us, if you have one;</li>
+            <li  className='text-xs'>e. Confirm your eligibility to use darb card;</li>
+            <li  className='text-xs'>f. Verify your identity (including processing of your identity documents in order to confirm your identity and to make an automated decision as to whether or not to provide you with darb card services);</li>
+            <li  className='text-xs'>g. Process or facilitate payment (through third party payment processing services) for QR e-ticket, and darb card;</li>
+            <li className='text-xs'>h. Send you transaction receipts for your use of QR e-ticket and/or darb card;</li>
+            <li className='text-xs'>i. Respond to your emails to discuss your use of the App, QR e-ticket, darb card and answer any support queries you may have;</li>
+            <li className='text-xs'>j. Send you marketing communications by email or in-App notifications, and let you know about our policies and terms or when we expand services in Riyadh city;</li>
+            <li className='text-xs'>k. Identify issues with the operation of the App, and provide crash reports in order to find resolution for performance issues;</li>
+            <li className='text-xs'>l. Improve the design, functionality and/or content of the pages of the App and customise them for you;</li>
+            <li className='text-xs'>m. Carry out research on users' transport choices to improve the App, and darb card;</li>
+            <li className='text-xs'>n. Conduct studies on use of public transit and ridership;</li>
+            <li className='text-xs'>o. Disclose to lawful authorities when required to do so by law, or when appropriate, in our opinion, to respond to their request.</li>
           </ul>
           <p className={styles.pargStyle}>
             We work hard to improve the App and add functionality, which we think will make it safer, more fun and
@@ -231,16 +232,16 @@ const PrivacyPolicy = () => {
             identifies you) and minimize the data we send to them.
           </p>
           <ul className='ps-10'>
-            <li className='mt-4'>
+            <li className='mt-4 text-xs'>
               a. <span className='underline'>Search Partners:</span> We have search partners like Google, so you can find the places you want to go in the App. They receive the place name you have searched for and to make your search results as relevant as possible, they receive your current location (if you have enabled location services in your device).
             </li>
-            <li className='mt-4'>
+            <li className='mt-4 text-xs'>
               b. <span className='underline'>Analytics Vendors:</span> We use third party vendors like Google Analytics to understand what you've tapped or clicked on the App. They receive information showing only that someone has tapped or used certain features in the App. They organise that information and give it back to us so that we can make improvements to the App.
             </li>
-            <li className='mt-4'>
+            <li className='mt-4 text-xs'>
               c. <span className='underline'>Crash/Error Reporting Vendors:</span> We may use vendors to report on crashes you experience with the App so we can fix those, and to report on errors with our backend.
             </li>
-            <li className='mt-4'>
+            <li className='mt-4 text-xs'>
               d. <span className='underline'>Communication Platforms:</span> To send you transaction receipts for your QR e-ticket and/or darb card subscription and to send you all other emails and update about our services, we use communication platforms.
             </li>
           </ul>
@@ -272,7 +273,7 @@ const PrivacyPolicy = () => {
             we are not able to connect your Installation ID to a verifiable email address. You must have access to
             the email address that you used when you created the account so that we can verify your identity.
           </p>
-          <p className={styles.smallStyle}>6.2   Deletion</p>
+          <p className={styles.smallStyle}>6.2 Deletion</p>
           <p className={styles.pargStyle}>
             We store your personal information for as long as is necessary to provide our services and products.
             You have the right to request we delete your personal information if you believe that we no longer

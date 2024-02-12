@@ -9,17 +9,19 @@ const RouterRow = ({ id, item }) => {
   const [rote, setRote] = useState([])
   const [roteid, setRoteId] = useState([])
   const [stops, setStops] = useState([])
+  const [backstops, setBackStops] = useState([])
   const [landmarks, setLandmarks]=useState([])
   
   const getRouteDetail = () => {
     axios.get(`${url}route/detail?id=${roteid}`)
       .then((res) => {
-        setStops(res.data.body[0].stops);
+        setStops(res.data.body[0].toGoStops);
+        setBackStops(res.data.body[0].backToStops);
         setRote(res.data.body);
         setLandmarks(res.data.body[0].landmarks)
       })
       .catch((err) => console.log(err))
-  }
+  } 
 
     return (
       <>
@@ -44,7 +46,7 @@ const RouterRow = ({ id, item }) => {
                 </div>
               </label>
               <div class="collapsible-item-content">
-                {rote && <AccardionOpen rote={rote} stops={stops} landmarks={landmarks} />}
+                {rote && <AccardionOpen rote={rote} stops={stops} backstops={backstops} landmarks={landmarks} />}
               </div>
             </div>
           </div>

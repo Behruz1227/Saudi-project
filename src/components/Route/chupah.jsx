@@ -1,21 +1,16 @@
 import { useState } from "react"
-
 const Chupah = ({ stops }) => {
-
     const [active, Setactive] = useState(false)
     const activeToggle = () => Setactive(!active);
     let arr = [], routerAvto;
     for (let i = 1; i < stops.length - 1; i++) {
         arr.push(stops[i])
     }
-    // ---------------------
     for (let i = 0; i < stops.length; i++) {
         if (stops.length - 1 === i) {
             routerAvto = stops[i]
         }
     }
-
-
     return (
         <div className="">
             <ul className={`stop-list`} >
@@ -40,5 +35,4 @@ const Chupah = ({ stops }) => {
 
     )
 }
-
 export default Chupah

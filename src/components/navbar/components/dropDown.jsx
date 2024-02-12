@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const DropDown = ({ openDropDown, isOpenDrop }) => {
-    const [dropVal, setDropVal] = useState('');
+    const [dropVal, setDropVal] = useState(null);
     return (
         <>
             <button
                 onClick={openDropDown}
                 className="text-black font-bold rounded-lg text-[1.2rem] text-center inline-flex items-center 
                 tracking-widest hover:opacity-70 duration-300">
-                {dropVal ? dropVal : 'العربية'}
+                {dropVal ? dropVal : 'En'}
                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                 </svg>
@@ -22,19 +22,18 @@ const DropDown = ({ openDropDown, isOpenDrop }) => {
                         <Link
                             onClick={() => {
                                 openDropDown();
-                                setDropVal('العربية');
+                                setDropVal('En');
                             }}
-                            className="block px-4 py-2 hover:bg-gray-100">العربية</Link>
+                            className="block px-4 py-2 hover:bg-gray-100">En</Link>
                     </li>
                     <li>
                         <Link
                             onClick={() => {
                                 openDropDown();
-                                setDropVal('En');
+                                setDropVal('العربية');
                             }}
-                            className="block px-4 py-2 hover:bg-gray-100">En</Link>
+                            className="block px-4 py-2 hover:bg-gray-100">العربية</Link>
                     </li>
-                   
                 </ul>
             </div>
         </>

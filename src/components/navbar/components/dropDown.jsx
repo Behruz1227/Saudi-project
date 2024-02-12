@@ -34,22 +34,7 @@ const DropDown = ({ openDropDown, isOpenDrop }) => {
                             }}
                             className="block px-4 py-2 hover:bg-gray-100">En</Link>
                     </li>
-                    <li>
-                        <Link
-                            onClick={() => {
-                                openDropDown();
-                                setDropVal('Ru');
-                            }}
-                            className="block px-4 py-2 hover:bg-gray-100">Ru</Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={() => {
-                                openDropDown();
-                                setDropVal('Uz');
-                            }}
-                            className="block px-4 py-2 hover:bg-gray-100">Uz</Link>
-                    </li>
+                   
                 </ul>
             </div>
         </>

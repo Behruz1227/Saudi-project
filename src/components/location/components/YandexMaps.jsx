@@ -99,7 +99,7 @@ const YandexMaps = () => {
                     />
                     <RouteEditor
                         options={{
-                            position: { top: 30, right: 90 },
+                            position: { top: 30, right: 100 },
                             editWayPoints: true, // Yo'lning boshlanish joyidan boshlab chizishni ruxsat etish
                             editViaPoints: true, // Yo'l segmentlarini tahrirlashni ruxsat etish
                             editSegmentControl: true, // Yo'l turini o'zgartirishni ruxsat etish
@@ -120,8 +120,8 @@ const YandexMaps = () => {
             <button
                 onClick={getMyLocation}
                 className='absolute right-1 bottom-[22rem] text-green-400 border-2 shadow-lg active:bg-green-500 
-                active:text-white hover:text-green-600 duration-200 bg-white rounded-full w-10 h-10'>
-                <i className="fa-solid fa-location-crosshairs"></i>
+                active:text-white hover:text-green-600 duration-200 bg-white rounded-full w-10 h-10 flex justify-center items-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" className='w-8 h-8' viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M8 1.018V0H7v1.018a6.5 6.5 0 0 0-5.981 5.977H0v1h1.019A6.508 6.508 0 0 0 7 13.981V15h1v-1.019a6.508 6.508 0 0 0 5.981-5.986H15v-1h-1.019A6.5 6.5 0 0 0 8 1.018M8 3v3.995h4v1H8V12H7V7.995H3v-1h4V3z" clip-rule="evenodd"/></svg>
             </button>
         </div>
     )

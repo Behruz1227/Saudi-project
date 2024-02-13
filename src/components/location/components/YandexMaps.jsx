@@ -11,7 +11,7 @@ import {
 } from "react-yandex-maps";
 
 const YandexMaps = () => {
-    const [locate, setLocate] = useState([38.841605, 65.789979]);
+    const [locate, setLocate] = useState([24.665558, 46.735922]);
     const [zoom, setZoom] = useState(10);
     const [addressLoc, setAddressLoc] = useState();
     const [isHovered, setHovered] = useState(false);

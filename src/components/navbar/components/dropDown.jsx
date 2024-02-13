@@ -7,7 +7,7 @@ const DropDown = ({ openDropDown, isOpenDrop }) => {
         <>
             <button
                 onClick={openDropDown}
-                className="text-black font-bold rounded-lg text-[1.2rem] text-center inline-flex items-center 
+                className="text-black font-medium font-mono rounded-lg text-[1.2rem] text-center inline-flex items-center 
                 tracking-widest hover:opacity-70 duration-300">
                 {dropVal ? dropVal : 'En'}
                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

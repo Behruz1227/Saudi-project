@@ -7,8 +7,7 @@ import video from "../../../assets/home-page/video/riyadhbusvideo.mp4"
 import iosApp from "../../../assets/home-page/ios-app.png"
 import androidApp from "../../../assets/home-page/android-app.png"
 import "../style.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import vector from "../../../assets/home-page/Vector.svg"
 
 function MobilApp() {
 
@@ -40,8 +39,9 @@ function MobilApp() {
                                 </button>
                                 {/* Tilni tanlash uchun dropdown */}
                                 <div className="relative">
-                                    <button className="p-2">
-                                        <i className="fas fa-chevron-down"></i> {/* Dropdown ikonkasi */}
+                                    <button className="p-2 flex items-center">
+                                        <p className="mr-5 border-l-2 pl-5">العربية</p>
+                                        <img src={vector} alt="" />
                                     </button>
                                     {/* Dropdown menyusi */}
                                 </div>

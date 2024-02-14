@@ -1,11 +1,13 @@
 import logo from "../../../assets/home-page/logo.png"
 import vektor from "../../../assets/home-page/Vector.png"
-import phone from "../../../assets/home-page/phone.png"
+import ios from "../../../assets/home-page/ios.svg"
+import android from "../../../assets/home-page/android.svg"
 import logosecond from "../../../assets/home-page/logosecond.png"
 import video from "../../../assets/home-page/video/riyadhbusvideo.mp4"
 import iosApp from "../../../assets/home-page/ios-app.png"
 import androidApp from "../../../assets/home-page/android-app.png"
 import "../style.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
 function MobilApp() {
@@ -31,10 +33,10 @@ function MobilApp() {
                             <div className="flex items-center">
                                 {/* Profil va sozlamalar uchun ikonkalar */}
                                 <button className="p-2">
-                                    <i className="fas fa-user-circle"></i> {/* Profil ikonkasi */}
+                                    <img src={ios} alt="" />
                                 </button>
                                 <button className="p-2">
-                                    <i className="fas fa-cog"></i> {/* Sozlamalar ikonkasi */}
+                                    <img src={android} className="w-15" alt="" />
                                 </button>
                                 {/* Tilni tanlash uchun dropdown */}
                                 <div className="relative">
@@ -78,8 +80,8 @@ function MobilApp() {
                                 </div>
                                 <p class="text-lg mb-4 md:w-32 w-full">Download the Riyadh Bus app today.</p>
                                 <div class="flex mt-2">
-                                   <img src={iosApp} alt="" className="w-36 mr-5"/>
-                                   <img src={androidApp} alt="" className="w-36" />
+                                    <img src={iosApp} alt="" className="w-36 mr-5" />
+                                    <img src={androidApp} alt="" className="w-36" />
                                 </div>
                             </div>
                         </div>

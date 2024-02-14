@@ -63,19 +63,7 @@ function TripplanFirs() {
               {/* O'rtadagi nuqta */}
               <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" /></svg>
             </div>
-          )) : <div  className="flex justify-start items-center flex-shrink-0">
-            <div className="">
-              <button className={`${firstButtonClass} bg-blue-400 `}>
-                Bus 
-              </button>
-              <button className={`${secondButtonClass} mx-3`}>
-                <p className="text-gray-500">8:30 | </p>
-              </button>
-            </div>
-
-            {/* O'rtadagi nuqta */}
-            <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" /></svg>
-          </div>}
+          )) : ""}
       </div>
     </div>
   );

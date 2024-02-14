@@ -2,13 +2,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { url } from "../../api";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function TripplanFirs() {
-  const [trips, getTrip] = useState([]);
+  const [trips, getTrip] = useState(null);
   const firstButtonClass =
-    "font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded-3xl text-white mx-2";
+    "font-bold py-2 px-10 focus:outline-none focus:shadow-outline rounded-3xl text-white mx-2";
   const secondButtonClass =
-    "font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded-3xl text-white border  ";
+    "font-bold py-2 px-7 focus:outline-none focus:shadow-outline rounded-3xl text-white border  ";
 
   useEffect(() => {
     getTrips();
@@ -18,7 +19,7 @@ function TripplanFirs() {
       .get(`${url}route/list`)
       .then((res) => {
         getTrip(res.data.body);
-        // console.log(res.data.body);
+        console.log(res.data + "slaom");
       })
       .catch((err) => {
         console.error(err);
@@ -50,17 +51,17 @@ function TripplanFirs() {
         {trips ?
           trips.map((item, index) => (
             <div key={index} className="flex justify-start items-center flex-shrink-0">
-              {/* <div className=""> */}
-              <button className={`${firstButtonClass} bg-blue-400`}>
-                Bus {item.name}
-              </button>
-              <button className={`${secondButtonClass} mx-3`}>
-                <p className="text-gray-500">8:30 | {item.description}</p>
-              </button>
-              {/* </div> */}
+              <div className="">
+                <button className={`${firstButtonClass} bg-blue-400 `}>
+                  Bus {item.name}
+                </button>
+                <button className={`${secondButtonClass} mx-3`}>
+                  <p className="text-gray-500">8:30 | {item.fromLocation}</p>
+                </button>
+              </div>
 
               {/* O'rtadagi nuqta */}
-              <i className="fa-solid fa-circle text-black mr-2"></i>
+              <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" /></svg>
             </div>
           )) : <div className="bg-red-400 text-black w-max px-5 py-3 rounded-2xl">Network Error !</div>}
       </div>
